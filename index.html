@@ -361,6 +361,10 @@
                             <div style="display:flex; align-items:center; gap:10px; background:#f6fafb; border-radius:4px; padding:12px 16px; border-left:3px solid #1d3642;">
                                 <span style="font-weight:600; color:#1d3642;">Sweden</span>
                             </div>
+                            <div style="display:flex; align-items:center; gap:10px; background:#f0fafa; border-radius:4px; padding:12px 16px; border-left:3px solid #44919c;">
+                                <span style="font-weight:600; color:#1d3642;">Norway</span>
+                                <span style="font-size:0.75em; background:#44919c; color:white; padding:2px 8px; border-radius:10px; margin-left:8px;">New — Apr 27</span>
+                            </div>
                         </div>
                     </div>
 
@@ -414,7 +418,7 @@
                 { name: "Branch Data Captured", desc: "All branch location data collected" },
                 { name: "PWN Activity Matrix Shared", desc: "Activity compliance matrix distributed" },
                 { name: "Workday as Data Source Confirmed", desc: "Primary data source identified" },
-                { name: "Employer Questionnaires Issued", desc: "Initial questionnaires distributed" },
+                { name: "Employer Questionnaires Issued", desc: "Initial questionnaires distributed. Master spreadsheet extended (Apr 27) to include all required data fields: employer questionnaires, destination questionnaires, project data, and workplace addresses. Covers Luxembourg, Netherlands, and additional countries. Field requirements extracted directly from the Cozm portal per country. Team dividing work to extract data from historical PWN submissions." },
                 { name: "POAs Completed", desc: "Powers of Attorney completed for in-scope countries" },
                 { name: "Workday Minor API Fields", desc: "Additional API fields for new scope requirements - COMPLETED" },
                 { name: "Cost Recharge Logic Finalisation", desc: "Final details with KION finance team - COMPLETED" },
@@ -426,8 +430,8 @@
                 { name: "Approve scope for Equal Pay calculations starting with CH", desc: "Switzerland, France, Austria questionnaires - Irene completed reviewing fee quote from The Cozm" },
                 { name: "Countries clustered in Concur", desc: "The Cozm displayed a message indicating that the tool is not yet available in the individual's home country, if the link in the banner is clicked by an individual who is not based in one of the go-live countries." },
                 { name: "Concur banner integration", desc: "Banner integration configured to only appear when individual actually booked the trip through Concur - COMPLETED" },
-                { name: "Draft employee communication and guidelines", desc: "The Cozm team assisted with drafting the employee communication, user guide and FAQ list" },
-                { name: "PWN liaison persons", desc: "The Cozm has provided all necessary details required for KION to identify the necessary liaison persons." },
+                { name: "Draft employee communication and guidelines", desc: "The Cozm team assisted with drafting the employee communication, user guide and FAQ list.<br><br><strong>Status (Apr 27):</strong> User Guide is under review. Review meeting scheduled for April 27, 2026. Issues raised: some screenshots are unclear and certain sections were not fully understood by reviewers." },
+                { name: "PWN liaison persons", desc: "The Cozm has provided all necessary details required for KION to identify the necessary liaison persons.<br><br><strong>Clarification (Apr 27):</strong> The liaison person is part of the <strong>destination questionnaire</strong>. Some countries (Austria, Switzerland, Denmark) require an in-country contact person. Liaison person = <strong>KION's contact person for that specific project/destination</strong>." },
                 { name: "Destination workplaces", desc: "The Cozm has added a new section 'Destination Workplaces' on the Employer Portal, where the GM team can add workplaces and link projects against them. The Cozm adjusted the functionality based on feedback from Irene and her team." },
                 { name: "Project Info Drop-down", desc: "The Cozm has updated the project linkage from the destination entity/client to destination workplaces. Implemented the workflow for projects added by employees in the assessment module." }
             ],
@@ -435,57 +439,57 @@
                 {
                     name: "Identify frequent travelers",
                     desc: "<strong>Testing postponed</strong> — pending completion of project data. Once project data gaps are resolved and data is complete, further testing with real travellers is required. No test performed yet with people travelling from Germany and the US.<br><br>You can access our calendar here: <strong><a href='https://thecozm.sharepoint.com/:x:/s/KION/EXg6W4lUZwpEiPmIrJkxQagByJT23poYyhiIX_IsRAceXQ?e=dCHjpP' target='_blank' style='color:#44919c;text-decoration:underline;'>KION - Employee testing calendar.xlsx</a></strong>",
-                    timeline: "April 27, 2026",
+                    timeline: "May 6, 2026",
                     responsible: "KION Group & The Cozm"
                 },
                 {
                     name: "Switzerland - EP4EW and EasyGov mandates",
-                    desc: "<ul style='margin-top:8px;margin-left:20px;line-height:2;'><li><strong>Spain:</strong> no mandate</li><li><strong>United States:</strong> no mandate</li><li><strong>United Kingdom:</strong> mandate allocation to Dovile is in progress</li><li><strong>Lithuania:</strong> mandate allocation to a local team member is in progress</li><li><strong>Germany:</strong> under Dovile's mandate</li></ul>",
-                    timeline: "April 27, 2026",
+                    desc: "<ul style='margin-top:8px;margin-left:20px;line-height:2;'><li><strong>Spain:</strong> no mandate</li><li><strong>United States:</strong> no mandate</li><li><strong>United Kingdom:</strong> mandate allocation to Dovile is in progress</li><li><strong>Lithuania:</strong> mandate allocation to a local team member is in progress</li><li><strong>Germany:</strong> under Dovile's mandate</li></ul><br><br><strong>&#9888; EasyCov Mandate Rule (Swiss Authorities):</strong> Only <strong>one active mandate is allowed at a time</strong> during the approval process. If Dovile and Michiel apply simultaneously using Dovile's authorisation code:<br><ul style='margin-top:8px;margin-left:20px;line-height:2;'><li>Michiel gets access immediately</li><li>Dovile loses access until Michiel's mandate is approved</li><li>Once Michiel's mandate is approved, Michiel can then invite Dovile back</li></ul><strong>Implication:</strong> Parallel applications during mandate registration are not possible.",
+                    timeline: "May 6, 2026",
                     responsible: "KION Group"
                 },
                 {
                     name: "Employer questionnaire",
-                    desc: "KION should update the relevant recepient destination questionnaires linked to the Snowflake data.",
-                    timeline: "April 27, 2026",
+                    desc: "KION should update the relevant recipient destination questionnaires linked to the Snowflake data.<br><br><strong>Open Items (Apr 27):</strong><br><ul style='margin-top:8px;margin-left:20px;line-height:2;'><li><strong>Czech Republic &#8212; ICO Number:</strong> The portal requires an ICO number for recipient companies. This was never submitted in manual PWN processes before. <strong>Action:</strong> Paul / Raihana to confirm whether this field is truly required or misconfigured in the portal.</li><li><strong>Netherlands &#8212; Representative Details:</strong> The portal asks for the company representative (phone, email, name) of the recipient entity &#8212; however this should relate to the sending entity, not the recipient. Questions appear to be in the wrong section (employer vs. recipient). <strong>Action:</strong> Cozm to adjust field placement.</li></ul>",
+                    timeline: "May 6, 2026",
                     responsible: "KION Group"
                 },
                 {
                     name: "Project data — KION actions",
                     desc: "<strong>Status (Apr 15):</strong> Irene's team is reviewing project lists from finance (permanent establishments data) and comparing against the Snowflake export to identify gaps. Timeline cannot be estimated yet — scope of missing data must be assessed first. KION will align internally and provide a confirmed go-live date.<br><br><strong>Actions:</strong><br><ul style='margin-top:8px;margin-left:20px;line-height:2;'><li><strong>Paul P / Raihana:</strong> Provide spreadsheet export of current portal data (projects, recipients, workplaces) — easier for KION to review than the portal interface, requested by Irene for internal review</li><li><strong>Review project list</strong> — verify all active projects are included</li><li><strong>Review recipient list</strong> — ensure alignment with active projects (<strong>MOST CRITICAL — blocks PWN filing</strong>)</li><li><strong>Review workplace addresses</strong> — priority for EMEA go-live countries</li></ul>",
-                    timeline: "April 27, 2026",
+                    timeline: "May 6, 2026",
                     responsible: "KION Group"
                 },
                 {
                     name: "PWN Distribution",
-                    desc: "Two types of assistants handle PWN confirmations: executive assistants vs. regular employee assistants.<br><br>* Some PWN confirmations contain salary information (e.g. <strong>Austria</strong>) — assistants should not have access to this sensitive data (GDPR concern)<br>* <strong>Action:</strong> April 10, 2026 German session — ask participants who should receive PWN copies and who uploads PWNs to client portals<br>* <strong>Short-term:</strong> Continue current distribution process until a longer-term solution is defined",
-                    timeline: "April 27, 2026",
+                    desc: "Two types of assistants handle PWN confirmations: executive assistants vs. regular employee assistants.<br><br>* Some PWN confirmations contain salary information (e.g. <strong>Austria</strong>) — assistants should not have access to this sensitive data (GDPR concern)<br>* <strong>Action:</strong> April 10, 2026 German session — ask participants who should receive PWN copies and who uploads PWNs to client portals<br>* <strong>Short-term:</strong> Continue current distribution process until a longer-term solution is defined<br><br><strong>Status (Apr 27):</strong> Not a current focus — KION is mainly focused on project data completion. KION will inform The Cozm when decisions have been made.",
+                    timeline: "May 6, 2026",
                     responsible: "KION Group"
                 }
             ],
             'cozm-progress': [
                 {
                     name: "Project data — Cozm actions",
-                    desc: "Major data cleanup completed by Paul &amp; Raihana: 113,000+ rows reduced to ~150 projects (Europe) and ~2,000 (North America). Data now on staging and synced to production.<br><br><strong>Action (Apr 15):</strong> Michiel to create an Excel extract showing data gaps by country:<br><ul style='margin-top:8px;margin-left:20px;line-height:2;'><li>Focus on initial go-live destination countries</li><li>Clear overview of missing fields per country</li><li>Can be forwarded to project managers for completion</li></ul><br><strong>Data available:</strong> Projects, client/recipients (~190 EU entries), workplace addresses (~5,000)<br><strong>Projects require:</strong> Name, ID/number, contracting entity, destination country<br><strong>Recipients require:</strong> Address details &amp; liaison person info (varies by country)",
-                    timeline: "April 27, 2026",
+                    desc: "Major data cleanup completed by Paul &amp; Raihana: 113,000+ rows reduced to ~150 projects (Europe) and ~2,000 (North America). Data now on staging and synced to production.<br><br><strong>Cozm Project Data Analysis (Apr 27):</strong> Three categories identified:<br><ul style='margin-top:8px;margin-left:20px;line-height:2;'><li><strong>Not in Snowflake at all</strong> (~most projects) — project name does not exist in Snowflake data</li><li><strong>In Snowflake but no address data</strong> (several projects) — e.g. Amazon CDG7 has project name/number/dates but no location data</li><li><strong>Complete in system</strong> (only 2 projects) — all data including addresses present</li></ul><strong>Actions:</strong><br><ul style='margin-top:8px;margin-left:20px;line-height:2;'><li>Paul shared detailed analysis spreadsheet with KION</li><li>KION to add missing projects manually using their spreadsheet</li><li>Future: possible Snowflake team consultation for additional data sources</li></ul><br><strong>Data available:</strong> Projects, client/recipients (~190 EU entries), workplace addresses (~5,000)<br><strong>Projects require:</strong> Name, ID/number, contracting entity, destination country<br><strong>Recipients require:</strong> Address details &amp; liaison person info (varies by country)",
+                    timeline: "May 6, 2026",
                     responsible: "The Cozm"
                 },
                 {
                     name: "Assistance mode",
                     desc: "Core principle: Team assistants should <strong>NOT</strong> see sensitive employee data (salary, home address, social security numbers) — GDPR compliance required.<br><br>Confirmed approach: Workday feeds Cozm with all data → assistants do not see pre-populated information → only see missing fields to complete.<br><br><strong>Status:</strong> Still needs GDPR-compliant configuration — <em>not blocking go-live</em>",
-                    timeline: "April 27, 2026",
+                    timeline: "May 6, 2026",
                     responsible: "The Cozm"
                 },
                 {
                     name: "A1 certificate upload",
-                    desc: "During the first assessment, employees will be asked if they are in possession of a valid A1 certificate. If yes, a copy should be uploaded.",
-                    timeline: "April 27, 2026",
+                    desc: "Employees will be asked to upload their A1 certificate on their <strong>first portal login</strong>. If they are in possession of a valid A1 certificate, a copy should be uploaded at that point.<br><br><strong>Status (Apr 27):</strong> Cozm is actively working on implementation of this feature.",
+                    timeline: "May 6, 2026",
                     responsible: "The Cozm"
                 },
                 {
                     name: "Platform Customization",
                     desc: "Customization of the employee portal required before go-live:<br><ul style='margin-top:8px;margin-left:20px;line-height:2;'><li>Paul to add KION FAQ link to the employee portal help menu</li><li>Add user guide link prominently on the employee portal</li></ul>",
-                    timeline: "April 27, 2026",
+                    timeline: "May 6, 2026",
                     responsible: "Paul / The Cozm"
                 }
             ],
@@ -495,6 +499,12 @@
                     desc: "The Cozm shared a paragraph to add to the automated email that is shared with the employees after booking the trip. AMEX is to implement this. Not blocking go-live.<br><br><strong>Status (Apr 15):</strong> Irene queried the status — item was marked complete but no confirmation of implementation has been received. <strong>Action:</strong> Michiel to discuss with Abhay.",
                     timeline: "TBD",
                     responsible: "KION Group and AMEX GBT"
+                },
+                {
+                    name: "AMEX GBT Data Cross-Checking (Adoption Rate)",
+                    desc: "<strong>New discussion (Apr 27):</strong> KION wants to cross-check AMEX travel data against Cozm usage data to measure platform adoption rate.<br><br><strong>Proposed approach:</strong> Weekly / biweekly / monthly travel statements from AMEX GBT, cross-referenced with Cozm activity data to calculate how many travellers are actively using the Cozm platform.<br><br><strong>Context:</strong><br><ul style='margin-top:8px;margin-left:20px;line-height:2;'><li>Concur <em>Expenses</em> data is NOT reliable (people claim on behalf of others)</li><li>Concur <em>Travel</em> data or AMEX booking data is required</li><li>Phone bookings must also be included (common in Germany for certain roles)</li><li>AMEX GBT integration was previously parked — now being revisited</li></ul><strong>Action:</strong> Pick up AMEX GBT integration conversation — Cozm can easily cross-check if AMEX sends monthly reports.",
+                    timeline: "TBD",
+                    responsible: "KION Group / AMEX GBT / The Cozm"
                 },
                 {
                     name: "Assignment letters",
