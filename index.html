@@ -262,7 +262,7 @@
         <div id="kion-progress" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon icon-in-progress"></div>
-                In Progress with KION (5)
+                In Progress with KION (7)
             </h2>
             <div id="kion-progress-list" class="milestone-grid"></div>
         </div>
@@ -271,7 +271,7 @@
         <div id="cozm-progress" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon" style="background:#BD8941;"></div>
-                In Progress with The Cozm (7)
+                In Progress with The Cozm (2)
             </h2>
             <div id="cozm-progress-list" class="milestone-grid"></div>
         </div>
@@ -444,51 +444,51 @@
                 },
                 {
                     name: "Switzerland - EP4EW and EasyGov mandates",
-                    desc: "<ul style='margin-top:8px;margin-left:20px;line-height:2;'><li><strong>Spain:</strong> no mandate</li><li><strong>United States:</strong> no mandate</li><li><strong>United Kingdom:</strong> mandate allocation to Dovile is in progress</li><li><strong>Lithuania:</strong> mandate allocation to a local team member is in progress</li><li><strong>Germany:</strong> under Dovile's mandate</li></ul><br><br><strong>&#9888; EasyCov Mandate Rule (Swiss Authorities):</strong> Only <strong>one active mandate is allowed at a time</strong> during the approval process. If Dovile and Michiel apply simultaneously using Dovile's authorisation code:<br><ul style='margin-top:8px;margin-left:20px;line-height:2;'><li>Michiel gets access immediately</li><li>Dovile loses access until Michiel's mandate is approved</li><li>Once Michiel's mandate is approved, Michiel can then invite Dovile back</li></ul><strong>Implication:</strong> Parallel applications during mandate registration are not possible.",
+                    desc: "<ul style='margin-top:8px;margin-left:20px;line-height:2;'><li><strong>Spain:</strong> no mandate</li><li><strong>United States:</strong> no mandate</li><li><strong>United Kingdom:</strong> mandate allocation to Dovile is in progress</li><li><strong>Lithuania:</strong> mandate allocation to a local team member is in progress</li><li><strong>Germany:</strong> under Dovile's mandate</li></ul><br><br>KION will provide the relevant authorization codes a few days prior to go-live for Cozm to request mandates.",
                     timeline: "May 6, 2026",
                     responsible: "KION Group"
                 },
                 {
                     name: "Employer questionnaire",
-                    desc: "KION should update the relevant recipient destination questionnaires linked to the Snowflake data.<br><br><strong>Open Items (Apr 27):</strong><br><ul style='margin-top:8px;margin-left:20px;line-height:2;'><li><strong>Czech Republic &#8212; ICO Number:</strong> The portal requires an ICO number for recipient companies. This was never submitted in manual PWN processes before. <strong>Action:</strong> Paul / Raihana to confirm whether this field is truly required or misconfigured in the portal.</li><li><strong>Netherlands &#8212; Representative Details:</strong> The portal asks for the company representative (phone, email, name) of the recipient entity &#8212; however this should relate to the sending entity, not the recipient. Questions appear to be in the wrong section (employer vs. recipient). <strong>Action:</strong> Cozm to adjust field placement.</li></ul>",
+                    desc: "KION should update the relevant recipient destination questionnaires linked to the Snowflake data.",
                     timeline: "May 6, 2026",
                     responsible: "KION Group"
                 },
                 {
                     name: "Project data — KION actions",
-                    desc: "<strong>Status (Apr 15):</strong> Irene's team is reviewing project lists from finance (permanent establishments data) and comparing against the Snowflake export to identify gaps. Timeline cannot be estimated yet — scope of missing data must be assessed first. KION will align internally and provide a confirmed go-live date.<br><br><strong>Actions:</strong><br><ul style='margin-top:8px;margin-left:20px;line-height:2;'><li><strong>Paul P / Raihana:</strong> Provide spreadsheet export of current portal data (projects, recipients, workplaces) — easier for KION to review than the portal interface, requested by Irene for internal review</li><li><strong>Review project list</strong> — verify all active projects are included</li><li><strong>Review recipient list</strong> — ensure alignment with active projects (<strong>MOST CRITICAL — blocks PWN filing</strong>)</li><li><strong>Review workplace addresses</strong> — priority for EMEA go-live countries</li></ul>",
+                    desc: "Based on the data from the finance team, KION is reviewing the project list and will add missing projects manually.",
                     timeline: "May 6, 2026",
                     responsible: "KION Group"
                 },
                 {
                     name: "PWN Distribution",
-                    desc: "Two types of assistants handle PWN confirmations: executive assistants vs. regular employee assistants.<br><br>* Some PWN confirmations contain salary information (e.g. <strong>Austria</strong>) — assistants should not have access to this sensitive data (GDPR concern)<br>* <strong>Action:</strong> April 10, 2026 German session — ask participants who should receive PWN copies and who uploads PWNs to client portals<br>* <strong>Short-term:</strong> Continue current distribution process until a longer-term solution is defined<br><br><strong>Status (Apr 27):</strong> Not a current focus — KION is mainly focused on project data completion. KION will inform The Cozm when decisions have been made.",
+                    desc: "KION should determine who will receive the posted worker notification upon issuance.",
                     timeline: "May 6, 2026",
                     responsible: "KION Group"
+                },
+                {
+                    name: "Assistance mode",
+                    desc: "KION should determine which assistance, can access which personal data for the Cozm to amend the 'assistance mode' function.",
+                    timeline: "May 6, 2026",
+                    responsible: "KION"
+                },
+                {
+                    name: "User guide",
+                    desc: "KION should review the user guide, so the Cozm team can link the user guide to the employee platform.",
+                    timeline: "TBD",
+                    responsible: "KION"
                 }
             ],
             'cozm-progress': [
                 {
-                    name: "Project data — Cozm actions",
-                    desc: "Major data cleanup completed by Paul &amp; Raihana: 113,000+ rows reduced to ~150 projects (Europe) and ~2,000 (North America). Data now on staging and synced to production.<br><br><strong>Cozm Project Data Analysis (Apr 27):</strong> Three categories identified:<br><ul style='margin-top:8px;margin-left:20px;line-height:2;'><li><strong>Not in Snowflake at all</strong> (~most projects) — project name does not exist in Snowflake data</li><li><strong>In Snowflake but no address data</strong> (several projects) — e.g. Amazon CDG7 has project name/number/dates but no location data</li><li><strong>Complete in system</strong> (only 2 projects) — all data including addresses present</li></ul><strong>Actions:</strong><br><ul style='margin-top:8px;margin-left:20px;line-height:2;'><li>Paul shared detailed analysis spreadsheet with KION</li><li>KION to add missing projects manually using their spreadsheet</li><li>Future: possible Snowflake team consultation for additional data sources</li></ul><br><strong>Data available:</strong> Projects, client/recipients (~190 EU entries), workplace addresses (~5,000)<br><strong>Projects require:</strong> Name, ID/number, contracting entity, destination country<br><strong>Recipients require:</strong> Address details &amp; liaison person info (varies by country)",
-                    timeline: "May 6, 2026",
-                    responsible: "The Cozm"
-                },
-                {
-                    name: "Assistance mode",
-                    desc: "Core principle: Team assistants should <strong>NOT</strong> see sensitive employee data (salary, home address, social security numbers) — GDPR compliance required.<br><br>Confirmed approach: Workday feeds Cozm with all data → assistants do not see pre-populated information → only see missing fields to complete.<br><br><strong>Status:</strong> Still needs GDPR-compliant configuration — <em>not blocking go-live</em>",
-                    timeline: "May 6, 2026",
-                    responsible: "The Cozm"
-                },
-                {
                     name: "A1 certificate upload",
-                    desc: "Employees will be asked to upload their A1 certificate on their <strong>first portal login</strong>. If they are in possession of a valid A1 certificate, a copy should be uploaded at that point.<br><br><strong>Status (Apr 27):</strong> Cozm is actively working on implementation of this feature.",
+                    desc: "Employees will be asked to upload their A1 certificate on their <strong>first portal login</strong>. If they are in possession of a valid A1 certificate, a copy should be uploaded at that point. - this function was implemented, but requires testing before deployment.",
                     timeline: "May 6, 2026",
                     responsible: "The Cozm"
                 },
                 {
                     name: "Platform Customization",
-                    desc: "Customization of the employee portal required before go-live:<br><ul style='margin-top:8px;margin-left:20px;line-height:2;'><li>Paul to add KION FAQ link to the employee portal help menu</li><li>Add user guide link prominently on the employee portal</li></ul>",
+                    desc: "Customization of the employee portal required before go-live:<br><ul style='margin-top:8px;margin-left:20px;line-height:2;'><li>Paul to add KION FAQ link to the employee portal help menu</li></ul>",
                     timeline: "May 6, 2026",
                     responsible: "Paul / The Cozm"
                 }
