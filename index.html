@@ -166,19 +166,19 @@
                     <div class="stat-label">Overview</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('completed')">
-                    <div class="stat-number completed">32</div>
+                    <div class="stat-number completed">34</div>
                     <div class="stat-label">Completed</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('kion-progress')">
-                    <div class="stat-number in-progress">7</div>
+                    <div class="stat-number in-progress">5</div>
                     <div class="stat-label">In Progress - KION</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('cozm-progress')">
-                    <div class="stat-number" style="color:#d4a84b;">2</div>
+                    <div class="stat-number" style="color:#d4a84b;">3</div>
                     <div class="stat-label">In Progress - Cozm</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('amex-progress')">
-                    <div class="stat-number" style="color:#e8857a;">5</div>
+                    <div class="stat-number" style="color:#e8857a;">7</div>
                     <div class="stat-label">Non Critical</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('faq')">
@@ -194,7 +194,7 @@
                     <div class="stat-label">Countries</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number" style="color:#7dd4da;">70%</div>
+                    <div class="stat-number" style="color:#7dd4da;">69%</div>
                     <div class="stat-label">Overall Progress</div>
                 </div>
             </div>
@@ -208,7 +208,7 @@
             </h2>
             <div class="quick-stats">
                 <div class="quick-stat"><div class="quick-stat-number">May 22</div><div class="quick-stat-label">Next Major Milestone</div></div>
-                <div class="quick-stat"><div class="quick-stat-number">May 22</div><div class="quick-stat-label">Target Go-Live (Proposed)</div></div>
+                <div class="quick-stat"><div class="quick-stat-number">May 29</div><div class="quick-stat-label">Go-Live Confirmed</div></div>
             </div>
             <div class="milestone-grid">
                 <div class="milestone-item completed">
@@ -237,10 +237,10 @@
                         <div class="milestone-name">Final Configurations & Approvals</div>
                         <div class="status-badge status-in-progress">In Progress</div>
                     </div>
-                    <div class="milestone-description">Final phase focusing on questionnaire completion, Concur banner configuration, project data gap assessment, and internal approval processes. Go-live date proposed as May 22, 2026 — KION cannot commit until scope of missing project data is assessed. KION team aligning internally before providing confirmed date.</div>
+                    <div class="milestone-description">Final phase focused on confirmed go-live on May 29, 2026 for UK, US, Lithuania, Germany, Spain, Switzerland, France, Austria, Belgium, Czech Republic, Denmark, and Sweden. Scope is now centered on questionnaires, project data, Swiss mandate inputs, assistance mode setup, A1 upload testing, and UAT preparation ahead of the May 22, 2026 cutoff.</div>
                     <div class="milestone-details">
-                        <div class="detail-item"><div class="detail-icon icon-date"></div><div class="detail-text">Target: May 22, 2026 (proposed — pending project data gap assessment)</div></div>
-                        <div class="detail-item"><div class="detail-icon icon-team"></div><div class="detail-text">5 KION items, 7 Cozm items, 5 Non Critical items</div></div>
+                        <div class="detail-item"><div class="detail-icon icon-date"></div><div class="detail-text">Target: May 22, 2026 | Go-live: May 29, 2026</div></div>
+                        <div class="detail-item"><div class="detail-icon icon-team"></div><div class="detail-text">5 KION items, 3 Cozm items, 7 Non Critical items</div></div>
                     </div>
                 </div>
             </div>
@@ -250,7 +250,7 @@
         <div id="completed" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon icon-completed"></div>
-                Completed Milestones (32)
+                Completed Milestones (34)
             </h2>
             <div class="search-filter">
                 <input type="text" class="search-input" placeholder="Search completed milestones..." onkeyup="filterMilestones('completed', this.value)">
@@ -262,7 +262,7 @@
         <div id="kion-progress" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon icon-in-progress"></div>
-                In Progress with KION (7)
+                In Progress with KION (5)
             </h2>
             <div id="kion-progress-list" class="milestone-grid"></div>
         </div>
@@ -271,7 +271,7 @@
         <div id="cozm-progress" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon" style="background:#BD8941;"></div>
-                In Progress with The Cozm (2)
+                In Progress with The Cozm (3)
             </h2>
             <div id="cozm-progress-list" class="milestone-grid"></div>
         </div>
@@ -280,7 +280,7 @@
         <div id="amex-progress" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon" style="background:#BD4040;"></div>
-                Non Critical Action Items (5)
+                Non Critical Action Items (7)
             </h2>
             <div id="amex-progress-list" class="milestone-grid"></div>
         </div>
@@ -430,66 +430,62 @@
                 { name: "Approve scope for Equal Pay calculations starting with CH", desc: "Switzerland, France, Austria questionnaires - Irene completed reviewing fee quote from The Cozm" },
                 { name: "Countries clustered in Concur", desc: "The Cozm displayed a message indicating that the tool is not yet available in the individual's home country, if the link in the banner is clicked by an individual who is not based in one of the go-live countries." },
                 { name: "Concur banner integration", desc: "Banner integration configured to only appear when individual actually booked the trip through Concur - COMPLETED" },
-                { name: "Draft employee communication and guidelines", desc: "The Cozm team assisted with drafting the employee communication, user guide and FAQ list.<br><br><strong>Status (Apr 27):</strong> User Guide is under review. Review meeting scheduled for April 27, 2026. Issues raised: some screenshots are unclear and certain sections were not fully understood by reviewers." },
+                { name: "Draft employee communication and guidelines", desc: "The Cozm team assisted with drafting the employee communication, user guide and FAQ list.<br><br><strong>Status:</strong> Content is now ready for use in the rollout materials." },
+                { name: "PWN Distribution", desc: "Distribution approach confirmed for go-live. Employees receive a redacted PWN, the GM team has portal access to the full unredacted PWN, and project managers are not included before go-live due to workload, sensitivity, and GDPR risk." },
+                { name: "User guide", desc: "User guide completed and ready to be linked in the employee platform as part of the go-live setup." },
                 { name: "PWN liaison persons", desc: "The Cozm has provided all necessary details required for KION to identify the necessary liaison persons.<br><br><strong>Clarification (Apr 27):</strong> The liaison person is part of the <strong>destination questionnaire</strong>. Some countries (Austria, Switzerland, Denmark) require an in-country contact person. Liaison person = <strong>KION's contact person for that specific project/destination</strong>." },
                 { name: "Destination workplaces", desc: "The Cozm has added a new section 'Destination Workplaces' on the Employer Portal, where the GM team can add workplaces and link projects against them. The Cozm adjusted the functionality based on feedback from Irene and her team." },
                 { name: "Project Info Drop-down", desc: "The Cozm has updated the project linkage from the destination entity/client to destination workplaces. Implemented the workflow for projects added by employees in the assessment module." }
             ],
             'kion-progress': [
                 {
-                    name: "Identify frequent travelers",
-                    desc: "<strong>Testing postponed</strong> — pending completion of project data. Once project data gaps are resolved and data is complete, further testing with real travellers is required. No test performed yet with people travelling from Germany and the US.<br><br>You can access our calendar here: <strong><a href='https://thecozm.sharepoint.com/:x:/s/KION/EXg6W4lUZwpEiPmIrJkxQagByJT23poYyhiIX_IsRAceXQ?e=dCHjpP' target='_blank' style='color:#44919c;text-decoration:underline;'>KION - Employee testing calendar.xlsx</a></strong>",
-                    timeline: "May 6, 2026",
+                    name: "User Acceptance Testing (UAT)",
+                    desc: "New priority for the next session. KION is finalising participants for a focused assistant-led UAT round, with German team assistants as the primary audience and optional UK / international participants plus Works Council attendees.",
+                    timeline: "May 22, 2026",
                     responsible: "KION Group & The Cozm"
                 },
                 {
-                    name: "Switzerland - EP4EW and EasyGov mandates",
-                    desc: "<ul style='margin-top:8px;margin-left:20px;line-height:2;'><li><strong>Spain:</strong> no mandate</li><li><strong>United States:</strong> no mandate</li><li><strong>United Kingdom:</strong> mandate allocation to Dovile is in progress</li><li><strong>Lithuania:</strong> mandate allocation to a local team member is in progress</li><li><strong>Germany:</strong> under Dovile's mandate</li></ul><br><br>KION will provide the relevant authorization codes a few days prior to go-live for Cozm to request mandates.",
-                    timeline: "May 6, 2026",
-                    responsible: "KION Group"
-                },
-                {
-                    name: "Employer questionnaire",
-                    desc: "KION should update the relevant recipient destination questionnaires linked to the Snowflake data.",
-                    timeline: "May 6, 2026",
+                    name: "Employer questionnaires",
+                    desc: "Not all employer questionnaires are complete for the go-live countries. KION to complete the remaining questionnaires for the confirmed go-live scope by the current target date.",
+                    timeline: "May 22, 2026",
                     responsible: "KION Group"
                 },
                 {
                     name: "Project data — KION actions",
-                    desc: "Based on the data from the finance team, KION is reviewing the project list and will add missing projects manually.",
-                    timeline: "May 6, 2026",
-                    responsible: "KION Group"
-                },
-                {
-                    name: "PWN Distribution",
-                    desc: "KION should determine who will receive the posted worker notification upon issuance.",
-                    timeline: "May 6, 2026",
+                    desc: "Project data remains the main pressure point. KION is to complete as much project data as possible and prepare to walk Cozm through the current collection process so lightweight automation options can be identified.",
+                    timeline: "May 22, 2026",
                     responsible: "KION Group"
                 },
                 {
                     name: "Assistance mode",
-                    desc: "KION should determine which assistance, can access which personal data for the Cozm to amend the 'assistance mode' function.",
-                    timeline: "May 6, 2026",
+                    desc: "KION to provide assistant names, emails, and populations so the hidden-data assistance mode can be configured without exposing sensitive Workday fields.",
+                    timeline: "May 22, 2026",
                     responsible: "KION"
                 },
                 {
-                    name: "User guide",
-                    desc: "KION should review the user guide, so the Cozm team can link the user guide to the employee platform.",
-                    timeline: "TBD",
-                    responsible: "KION"
+                    name: "Go-live country scope & outstanding items",
+                    desc: "Go-live scope is locked to A1 countries UK, US, Lithuania, Germany, and Spain, plus PWN countries Switzerland, France, Austria, Belgium, Czech Republic, Denmark, and Sweden. Remaining items include project data, Swiss authorization codes and UID numbers, POAs, and other go-live inputs.",
+                    timeline: "May 22, 2026",
+                    responsible: "KION Group"
                 }
             ],
             'cozm-progress': [
                 {
                     name: "A1 certificate upload",
-                    desc: "Employees will be asked to upload their A1 certificate on their <strong>first portal login</strong>. If they are in possession of a valid A1 certificate, a copy should be uploaded at that point. - this function was implemented, but requires testing before deployment.",
-                    timeline: "May 6, 2026",
+                    desc: "Integration is complete. Cozm is improving data extraction from uploaded certificates and testing the upload flow before deployment.",
+                    timeline: "May 22, 2026",
+                    responsible: "The Cozm"
+                },
+                {
+                    name: "Switzerland - EP4EW and EasyGov mandates",
+                    desc: "Mandate switch remains on hold until roughly one week before go-live. Cozm plans to apply on the current target date, with KION to provide Swiss UID numbers and authorization codes for pending applications so access can be shared back once mandates are approved.",
+                    timeline: "May 22, 2026",
                     responsible: "The Cozm"
                 },
                 {
                     name: "Platform Customization",
-                    desc: "Customization of the employee portal required before go-live:<br><ul style='margin-top:8px;margin-left:20px;line-height:2;'><li>Paul to add KION FAQ link to the employee portal help menu</li></ul>",
-                    timeline: "May 6, 2026",
+                    desc: "KION FAQ link is ready to be added to the employee portal user interface.",
+                    timeline: "May 22, 2026",
                     responsible: "Paul / The Cozm"
                 }
             ],
@@ -521,7 +517,7 @@
                 {
                     name: "Danish salary threshold support",
                     desc: "<strong>Status (Apr 15):</strong> Irene requested contacts for the Danish authority that can provide a written salary table ruling. The existing CBA (collective bargaining agreement) is too flexible — KION needs clear, defined thresholds for compliance purposes.<br><br><strong>Action:</strong> Michiel to forward Ben's Danish authority contact details today (Apr 15). The authority can provide written confirmation on salary thresholds, giving KION a clear compliance baseline.",
-                    timeline: "Apr 15, 2026",
+                    timeline: "May 22, 2026",
                     responsible: "Michiel / The Cozm"
                 },
                 {
