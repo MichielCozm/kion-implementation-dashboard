@@ -174,11 +174,11 @@
                     <div class="stat-label">In Progress - KION</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('cozm-progress')">
-                    <div class="stat-number" style="color:#d4a84b;">3</div>
+                    <div class="stat-number" style="color:#d4a84b;">7</div>
                     <div class="stat-label">In Progress - Cozm</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('amex-progress')">
-                    <div class="stat-number" style="color:#e8857a;">7</div>
+                    <div class="stat-number" style="color:#e8857a;">9</div>
                     <div class="stat-label">Non Critical</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('faq')">
@@ -207,8 +207,8 @@
                 Project Overview
             </h2>
             <div class="quick-stats">
-                <div class="quick-stat"><div class="quick-stat-number">May 29</div><div class="quick-stat-label">Next Major Milestone</div></div>
-                <div class="quick-stat"><div class="quick-stat-number">May 29</div><div class="quick-stat-label">Go-Live Confirmed</div></div>
+                <div class="quick-stat"><div class="quick-stat-number">June 5</div><div class="quick-stat-label">Next Major Milestone</div></div>
+                <div class="quick-stat"><div class="quick-stat-number">June 5</div><div class="quick-stat-label">Go-Live Confirmed</div></div>
             </div>
             <div class="milestone-grid">
                 <div class="milestone-item completed">
@@ -237,10 +237,10 @@
                         <div class="milestone-name">Final Configurations & Approvals</div>
                         <div class="status-badge status-in-progress">In Progress</div>
                     </div>
-                    <div class="milestone-description">Final phase remains focused on confirmed go-live on May 29, 2026. Current priorities are Swiss mandate timing, assistant mode rollout, out-of-scope messaging, Spain fixes, production deployment of ready system updates, and preparation for the assistant walkthrough and formal UAT.</div>
+                    <div class="milestone-description">Final phase remains focused on confirmed go-live on June 5, 2026. Current priorities are go-live technical prep (Workday IP whitelist and Concur banner), validated address lookup for Sweden and France, assistant mode rollout, the new KION contact inbox and questionnaire update, Spain manual handling post go-live, and preparation for the assistant walkthrough and formal UAT.</div>
                     <div class="milestone-details">
-                        <div class="detail-item"><div class="detail-icon icon-date"></div><div class="detail-text">Target: May 29, 2026 | Go-live: May 29, 2026</div></div>
-                        <div class="detail-item"><div class="detail-icon icon-team"></div><div class="detail-text">4 KION items, 3 Cozm items, 7 Non Critical items</div></div>
+                        <div class="detail-item"><div class="detail-icon icon-date"></div><div class="detail-text">Target: June 5, 2026 | Go-live: June 5, 2026</div></div>
+                        <div class="detail-item"><div class="detail-icon icon-team"></div><div class="detail-text">4 KION items, 7 Cozm items, 9 Non Critical items</div></div>
                     </div>
                 </div>
             </div>
@@ -271,7 +271,7 @@
         <div id="cozm-progress" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon" style="background:#BD8941;"></div>
-                In Progress with The Cozm (3)
+                In Progress with The Cozm (7)
             </h2>
             <div id="cozm-progress-list" class="milestone-grid"></div>
         </div>
@@ -280,7 +280,7 @@
         <div id="amex-progress" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon" style="background:#BD4040;"></div>
-                Non Critical Action Items (7)
+                Non Critical Action Items (9)
             </h2>
             <div id="amex-progress-list" class="milestone-grid"></div>
         </div>
@@ -442,46 +442,70 @@
                 {
                     name: "User Acceptance Testing (UAT)",
                     desc: "German assistant walkthrough confirmed for Friday 29 May at 09:00 UK / 10:00 Germany with 5-6 participants including Nicole, Thomas, and a Works Council representative. Formal UAT is to be scheduled separately this week.",
-                    timeline: "May 29, 2026",
+                    timeline: "June 5, 2026",
                     responsible: "KION Group & The Cozm"
                 },
                 {
                     name: "Employer questionnaires",
                     desc: "Spain remains the main exception point. The Spanish legal representative is unwilling to grant power of attorney to The Cozm, and Irene will reconfirm the Spanish team's position on CoC signing while the signature field is made optional to avoid blocking submissions.",
-                    timeline: "May 29, 2026",
+                    timeline: "June 5, 2026",
                     responsible: "KION Group"
                 },
                 {
                     name: "Project data — KION actions",
-                    desc: "Spain is not in scope as a phase-one destination country. Irene will pause Spain project data entry until the province dropdown is fixed, and KION will provide the REA number needed for future Spanish PWN automation.",
-                    timeline: "May 29, 2026",
+                    desc: "Sweden and France require a validated address lookup for project addresses — addresses must be searched via the address bar rather than entered as free text (UX fix tracked separately with The Cozm). Spain remains out of scope as a phase-one destination country: Irene will pause Spain project data entry until the province dropdown is fixed, KION will provide the REA number needed for future Spanish PWN automation, and KION will share the Spanish HR team email addresses with The Cozm for forwarding applications.",
+                    timeline: "June 5, 2026",
                     responsible: "KION Group"
                 },
                 {
                     name: "Assistance mode",
-                    desc: "Agreed model: assistants do not see personal data, known data is stored for reuse, employees are notified for missing information, and the assistant spreadsheet must include Workday IDs with one row per employee.",
-                    timeline: "May 29, 2026",
+                    desc: "Irrum's assistant spreadsheet has been received (~955 employee records) and Paul confirmed it contains what is needed — the mapping of assistant email to employee Workday ID is sufficient. Further updates are expected as not all assistants have responded yet; KION (Irene / Irrum) will send updated spreadsheets as responses come in, and The Cozm (Raihana) will maintain a live internal table to manage the assistant-employee mapping. Agreed model: assistants do not see personal data, known data is stored for reuse, and employees are notified for any missing information.",
+                    timeline: "June 5, 2026",
                     responsible: "KION"
                 }
             ],
             'cozm-progress': [
                 {
                     name: "A1 certificate upload",
-                    desc: "A1 certificate upload and user guides are ready to deploy to production. User guide terminology still needs final confirmation so 'Cosm Travel' is used consistently throughout.",
-                    timeline: "May 29, 2026",
+                    desc: "The A1 certificate upload field is almost complete and will be live when users start using the system. <strong>User guides:</strong> Irene has shared the final onboarding video and confirmed the user guide version via Teams chat (Done).",
+                    timeline: "June 5, 2026",
                     responsible: "The Cozm"
                 },
                 {
                     name: "Switzerland - EP4EW and EasyGov mandates",
                     desc: "Swiss mandate switch is postponed to Friday 22 May to give KION one final week to file notifications independently. Germany and Lithuania remain on hold pending receipt confirmation, while Belgium and other non-phase-one countries can progress in parallel. UK and US mandates will be handled once KION confirms postings.",
-                    timeline: "May 29, 2026",
+                    timeline: "June 5, 2026",
                     responsible: "The Cozm"
                 },
                 {
                     name: "Platform Customization",
                     desc: "Out-of-scope travel handling is to be added in the platform: an in-app message directing employees to the global mobility inbox plus a weekly report of out-of-scope trips for the mobility team.",
-                    timeline: "May 29, 2026",
+                    timeline: "June 5, 2026",
                     responsible: "Paul / The Cozm"
+                },
+                {
+                    name: "Address entry — validated lookup (Sweden & France)",
+                    desc: "Irene flagged that free-text address entry is not working for Sweden and France. These countries require a validated address lookup — users must search via the address bar rather than type manually. The same applies to any country where the authorities only accept pre-validated addresses. The address field UX will be improved so the search field activates automatically when a user clicks into the address bar, accompanied by a clear instruction message.",
+                    timeline: "June 5, 2026",
+                    responsible: "Paul / The Cozm"
+                },
+                {
+                    name: "Spain destination — manual handling & automation",
+                    desc: "Spain was not included in the phase-one destination list. The integration covers most regions via Ley 45, but two autonomous communities (Cataluña and the Basque Country) still use separate portals. The Cozm will handle Spain PWNs manually post go-live and automate submission within approximately two weeks. KION confirmed current travel volume to Spain is low, so the manual approach is acceptable; KION will flag immediately if volume increases unexpectedly.<br><br><strong>Action:</strong> KION to share Spanish HR team email addresses with The Cozm for forwarding applications.",
+                    timeline: "~2 weeks post go-live",
+                    responsible: "The Cozm & KION Group"
+                },
+                {
+                    name: "Contact email & employer questionnaire update",
+                    desc: "KION has created a new dedicated inbox for all Cozm Travel-related queries. The current employer questionnaire references an individual's name (Amy) and an outdated email address — both need to be updated before go-live.<br><br><strong>Actions:</strong> Irene to share the new email address via Teams chat (ASAP); Irene / The Cozm to update the employer questionnaire with the new contact details before go-live; Paul to update the system to use the new KION email address for outbound queries.",
+                    timeline: "June 5, 2026",
+                    responsible: "Irene / Paul / The Cozm"
+                },
+                {
+                    name: "Go-live technical prep — Workday IP whitelist & Concur banner",
+                    desc: "Two outstanding technical items must be completed before go-live. <strong>Workday IP whitelist:</strong> The Cozm's production IP must be whitelisted — Raihana to email regarding the IP whitelist and production Workday activation. <strong>Concur banner:</strong> to be enabled for all five phase-one home countries on the production environment — Paul to send the updated HTML banner link to Abhay today or tomorrow at the latest.",
+                    timeline: "June 5, 2026",
+                    responsible: "Raihana / Paul / KION Group"
                 }
             ],
             'amex-progress': [
@@ -512,7 +536,7 @@
                 {
                     name: "Danish salary threshold support",
                     desc: "<strong>Status (Apr 15):</strong> Irene requested contacts for the Danish authority that can provide a written salary table ruling. The existing CBA (collective bargaining agreement) is too flexible — KION needs clear, defined thresholds for compliance purposes.<br><br><strong>Action:</strong> Michiel to forward Ben's Danish authority contact details today (Apr 15). The authority can provide written confirmation on salary thresholds, giving KION a clear compliance baseline.",
-                    timeline: "May 29, 2026",
+                    timeline: "June 5, 2026",
                     responsible: "Michiel / The Cozm"
                 },
                 {
@@ -526,6 +550,18 @@
                     desc: "Melissa needs travel data for salaried employees to support biweekly payroll reporting<br>• <strong>No Calculations Needed:</strong> At this stage, only raw data provision required<br>• <strong>Future Enhancement:</strong> Once project codes and project payroll codes integrated, tool could become highly valuable for US payroll team",
                     timeline: "TBD",
                     responsible: "KION Group"
+                },
+                {
+                    name: "PWN recipient field — triangle postings",
+                    desc: "Discussion on how to handle PWN filings where there is no local Dematic entity in the destination country (e.g. Denmark). In such cases the contracting entity is the UK, not a local branch. KION has historically used the end client's CVR number in Denmark, and the local Dematic entity in countries where one exists. Paul confirmed Denmark's PWN portal only accepts a local Danish CVR — no foreign recipient can be specified. The approach will be validated against what KION has historically submitted (no complaints from the authorities to date).<br><br><strong>Actions:</strong> Paul / Raihana to review which destination countries allow non-domestic recipients and flag any exceptions; Irene to align with Michiel on the correct logic for triangle postings.",
+                    timeline: "TBD",
+                    responsible: "Paul / Raihana / Irene"
+                },
+                {
+                    name: "Income tax assumption — recharge to host entity",
+                    desc: "The system currently assumes costs are never borne by the host / recipient entity. This may need revisiting now that employees are being posted to Dematic entities who hold the contracts.<br><br><strong>Action:</strong> Ben / Paul / Irene to revisit this with Brian upon his return — TBC.",
+                    timeline: "TBC",
+                    responsible: "Ben / Paul / Irene"
                 }
             ]
         };
