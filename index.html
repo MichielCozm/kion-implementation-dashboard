@@ -166,15 +166,15 @@
                     <div class="stat-label">Overview</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('completed')">
-                    <div class="stat-number completed">35</div>
+                    <div class="stat-number completed">37</div>
                     <div class="stat-label">Completed</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('kion-progress')">
-                    <div class="stat-number in-progress">4</div>
+                    <div class="stat-number in-progress">3</div>
                     <div class="stat-label">In Progress - KION</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('cozm-progress')">
-                    <div class="stat-number" style="color:#d4a84b;">7</div>
+                    <div class="stat-number" style="color:#d4a84b;">6</div>
                     <div class="stat-label">In Progress - Cozm</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('amex-progress')">
@@ -250,7 +250,7 @@
         <div id="completed" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon icon-completed"></div>
-                Completed Milestones (35)
+                Completed Milestones (37)
             </h2>
             <div class="search-filter">
                 <input type="text" class="search-input" placeholder="Search completed milestones..." onkeyup="filterMilestones('completed', this.value)">
@@ -262,7 +262,7 @@
         <div id="kion-progress" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon icon-in-progress"></div>
-                In Progress with KION (4)
+                In Progress with KION (3)
             </h2>
             <div id="kion-progress-list" class="milestone-grid"></div>
         </div>
@@ -271,7 +271,7 @@
         <div id="cozm-progress" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon" style="background:#BD8941;"></div>
-                In Progress with The Cozm (7)
+                In Progress with The Cozm (6)
             </h2>
             <div id="cozm-progress-list" class="milestone-grid"></div>
         </div>
@@ -436,7 +436,9 @@
                 { name: "Go-live country scope & outstanding items", desc: "Phase-one scope confirmed for 5 home countries and 8 destination countries. Out-of-scope travel will be handled via employee messaging to the global mobility inbox and weekly reporting for the mobility team." },
                 { name: "PWN liaison persons", desc: "The Cozm has provided all necessary details required for KION to identify the necessary liaison persons.<br><br><strong>Clarification (Apr 27):</strong> The liaison person is part of the <strong>destination questionnaire</strong>. Some countries (Austria, Switzerland, Denmark) require an in-country contact person. Liaison person = <strong>KION's contact person for that specific project/destination</strong>." },
                 { name: "Destination workplaces", desc: "The Cozm has added a new section 'Destination Workplaces' on the Employer Portal, where the GM team can add workplaces and link projects against them. The Cozm adjusted the functionality based on feedback from Irene and her team." },
-                { name: "Project Info Drop-down", desc: "The Cozm has updated the project linkage from the destination entity/client to destination workplaces. Implemented the workflow for projects added by employees in the assessment module." }
+                { name: "Project Info Drop-down", desc: "The Cozm has updated the project linkage from the destination entity/client to destination workplaces. Implemented the workflow for projects added by employees in the assessment module." },
+                { name: "Switzerland - EP4EW and EasyGov mandates", desc: "Swiss mandate switch is postponed to Friday 22 May to give KION one final week to file notifications independently. Germany and Lithuania remain on hold pending receipt confirmation, while Belgium and other non-phase-one countries can progress in parallel. UK and US mandates will be handled once KION confirms postings." },
+                { name: "Employer questionnaires", desc: "Spain remains the main exception point. The Spanish legal representative is unwilling to grant power of attorney to The Cozm, and Irene will reconfirm the Spanish team's position on CoC signing while the signature field is made optional to avoid blocking submissions." }
             ],
             'kion-progress': [
                 {
@@ -444,12 +446,6 @@
                     desc: "German assistant walkthrough confirmed for Friday 29 May at 09:00 UK / 10:00 Germany with 5-6 participants including Nicole, Thomas, and a Works Council representative. Formal UAT is to be scheduled separately this week.",
                     timeline: "June 5, 2026",
                     responsible: "KION Group & The Cozm"
-                },
-                {
-                    name: "Employer questionnaires",
-                    desc: "Spain remains the main exception point. The Spanish legal representative is unwilling to grant power of attorney to The Cozm, and Irene will reconfirm the Spanish team's position on CoC signing while the signature field is made optional to avoid blocking submissions.",
-                    timeline: "June 5, 2026",
-                    responsible: "KION Group"
                 },
                 {
                     name: "Project data — KION actions",
@@ -468,12 +464,6 @@
                 {
                     name: "A1 certificate upload",
                     desc: "The A1 certificate upload field is almost complete and will be live when users start using the system. <strong>User guides:</strong> Irene has shared the final onboarding video and confirmed the user guide version via Teams chat (Done).",
-                    timeline: "June 5, 2026",
-                    responsible: "The Cozm"
-                },
-                {
-                    name: "Switzerland - EP4EW and EasyGov mandates",
-                    desc: "Swiss mandate switch is postponed to Friday 22 May to give KION one final week to file notifications independently. Germany and Lithuania remain on hold pending receipt confirmation, while Belgium and other non-phase-one countries can progress in parallel. UK and US mandates will be handled once KION confirms postings.",
                     timeline: "June 5, 2026",
                     responsible: "The Cozm"
                 },
