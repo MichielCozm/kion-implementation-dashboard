@@ -34,18 +34,23 @@
     .milestone-item.completed { border-left-color: #44919c; }
     .milestone-item.in-progress { border-left-color: #BD8941; }
     .milestone-item.pending { border-left-color: #8ca3ac; }
+    .milestone-item.hypercare { border-left-color: #5a7380; }
     .milestone-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
     .milestone-name { font-size: 1em; font-weight: 600; color: #1d3642; flex: 1; line-height: 1.4; }
     .status-badge { padding: 4px 12px; border-radius: 4px; font-size: 0.75em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.6px; white-space: nowrap; margin-left: 14px; }
     .status-completed { background: #e8f6f7; color: #2e7d7e; }
     .status-in-progress { background: #faf3e6; color: #9a6a20; }
     .status-pending { background: #f1f4f5; color: #5a7380; }
+    .status-high { background: #fdeceb; color: #a33a32; }
+    .status-medium { background: #faf3e6; color: #9a6a20; }
+    .status-low { background: #f1f4f5; color: #5a7380; }
     .milestone-description { color: #4a6472; line-height: 1.65; font-size: 0.93em; }
-    .milestone-details { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; padding-top: 14px; border-top: 1px solid #e2ecee; }
+    .milestone-details { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-top: 14px; padding-top: 14px; border-top: 1px solid #e2ecee; }
     .detail-item { display: flex; align-items: center; gap: 8px; padding: 10px 12px; background: #f6fafb; border-radius: 4px; }
     .detail-icon { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
     .icon-date { background: #44919c; }
     .icon-team { background: #BD8941; }
+    .icon-category { background: #8ca3ac; }
     .detail-text { font-size: 0.87em; color: #1d3642; font-weight: 500; }
     .quick-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 28px; }
     .quick-stat { background: #1d3642; color: white; padding: 22px 20px; border-radius: 6px; text-align: center; }
@@ -166,16 +171,20 @@
                     <div class="stat-label">Overview</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('completed')">
-                    <div class="stat-number completed">41</div>
+                    <div class="stat-number completed">43</div>
                     <div class="stat-label">Completed</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('kion-progress')">
-                    <div class="stat-number in-progress">3</div>
+                    <div class="stat-number in-progress">2</div>
                     <div class="stat-label">In Progress - KION</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('cozm-progress')">
-                    <div class="stat-number" style="color:#d4a84b;">7</div>
+                    <div class="stat-number" style="color:#d4a84b;">6</div>
                     <div class="stat-label">In Progress - Cozm</div>
+                </div>
+                <div class="stat-card" onclick="scrollToSection('hypercare')">
+                    <div class="stat-number" style="color:#b6c6cc;">14</div>
+                    <div class="stat-label">Hypercare</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('amex-progress')">
                     <div class="stat-number" style="color:#e8857a;">9</div>
@@ -237,10 +246,10 @@
                         <div class="milestone-name">Final Configurations & Approvals</div>
                         <div class="status-badge status-in-progress">In Progress</div>
                     </div>
-                    <div class="milestone-description"><strong>Go-live remains Friday 12 June 2026.</strong> Current follow-up target is Tuesday 16 June 2026 for hypercare and post-go-live clean-up. Priorities are the project data and workplace address notification flow, broader assistant testing after go-live, monthly shadow payroll / GEP reporting, Lithuanian A1 coverage handling, out-of-scope destination visibility, Switzerland eight-day and weekend / holiday logic, Spain PWN automation, and the CIBT business visa redirect. Completed items now include the Sweden and France address entry fix, the KION contact email / employer questionnaire update, and go-live technical prep for Workday IP whitelisting and the Concur banner.</div>
+                    <div class="milestone-description"><strong>Go-live remains Friday 12 June 2026.</strong> Current follow-up target is Tuesday 16 June 2026 for hypercare and post-go-live clean-up. Priorities are the hypercare issue list, broader assistant testing after go-live, monthly shadow payroll / GEP reporting, A1 data extraction, out-of-scope destination visibility, Switzerland eight-day and weekend / holiday logic, Spain PWN automation, and the CIBT business visa redirect. Completed items now include the project data and workplace address flow, workplace address creation notifications, the Sweden and France address entry fix, the KION contact email / employer questionnaire update, and go-live technical prep for Workday IP whitelisting and the Concur banner.</div>
                     <div class="milestone-details">
                         <div class="detail-item"><div class="detail-icon icon-date"></div><div class="detail-text">Target: June 16, 2026 | Go-live: June 12, 2026 (Fri)</div></div>
-                        <div class="detail-item"><div class="detail-icon icon-team"></div><div class="detail-text">3 KION items, 7 Cozm items, 9 Non Critical items</div></div>
+                        <div class="detail-item"><div class="detail-icon icon-team"></div><div class="detail-text">2 KION items, 6 Cozm items, 14 Hypercare items, 9 Non Critical items</div></div>
                     </div>
                 </div>
             </div>
@@ -250,7 +259,7 @@
         <div id="completed" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon icon-completed"></div>
-                Completed Milestones (41)
+                Completed Milestones (43)
             </h2>
             <div class="search-filter">
                 <input type="text" class="search-input" placeholder="Search completed milestones..." onkeyup="filterMilestones('completed', this.value)">
@@ -262,7 +271,7 @@
         <div id="kion-progress" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon icon-in-progress"></div>
-                In Progress with KION (3)
+                In Progress with KION (2)
             </h2>
             <div id="kion-progress-list" class="milestone-grid"></div>
         </div>
@@ -271,9 +280,21 @@
         <div id="cozm-progress" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon" style="background:#BD8941;"></div>
-                In Progress with The Cozm (7)
+                In Progress with The Cozm (6)
             </h2>
             <div id="cozm-progress-list" class="milestone-grid"></div>
+        </div>
+
+        <!-- HYPERCARE -->
+        <div id="hypercare" class="content-section">
+            <h2 class="section-title">
+                <div class="section-icon icon-pending"></div>
+                Hypercare Action Items (14)
+            </h2>
+            <div class="search-filter">
+                <input type="text" class="search-input" placeholder="Search hypercare items..." onkeyup="filterMilestones('hypercare', this.value)">
+            </div>
+            <div id="hypercare-list" class="milestone-grid"></div>
         </div>
 
         <!-- NON CRITICAL -->
@@ -442,7 +463,9 @@
                 { name: "New custom SSO login screen — tested & approved", desc: "The new custom SSO login screen was tested live on the call (Jun 3) by Irene. Login via SSO worked successfully and Irene confirmed KION will be happy with the design. No further actions required." },
                 { name: "Address entry — validated lookup (Sweden & France)", desc: "The Sweden and France address entry issue has been resolved in the employer portal. Validated address lookup is available where those authorities require pre-validated workplace addresses. No further action required." },
                 { name: "Contact email & employer questionnaire update", desc: "The new KION contact email has been updated in the relevant employer questionnaires. No further action required." },
-                { name: "Go-live technical prep — Workday IP whitelist & Concur banner", desc: "Go-live technical preparation has been completed, including the Workday IP whitelist and Concur banner readiness for the phase-one launch. No further action required." }
+                { name: "Go-live technical prep — Workday IP whitelist & Concur banner", desc: "Go-live technical preparation has been completed, including the Workday IP whitelist and Concur banner readiness for the phase-one launch. No further action required." },
+                { name: "Project data & workplace address flow", desc: "KION will continue cleaning project data over time. Where an employee creates a new workplace address and recipient information is missing, the employee should not be fully blocked; the A1 flow should continue where possible while Global Mobility is notified to complete or validate the missing information. The flow walkthrough has been moved to completed tracking." },
+                { name: "Workplace address creation notifications", desc: "KION wants to be notified when new workplace addresses are created, even if the address does not block a submission, so project data can be cleaned consistently. The Cozm notification action has been moved to completed tracking." }
             ],
             'kion-progress': [
                 {
@@ -452,25 +475,13 @@
                     responsible: "KION Group & The Cozm"
                 },
                 {
-                    name: "Project data & workplace address flow",
-                    desc: "KION will continue cleaning project data over time. Where an employee creates a new workplace address and recipient information is missing, the employee should not be fully blocked; the A1 flow should continue where possible while Global Mobility is notified to complete or validate the missing information.<br><br><strong>Action:</strong> Paul / KION to schedule a short separate call with The Cozm to walk through the flow.",
+                    name: "KION follow-ups — GEP",
+                    desc: "Several KION-side checks remain open from the call.<br><br><strong>Shadow payroll / GEP:</strong> Kelly to share the list of project workers already exceeding 10 days; Brian / KION to continue alignment with BDO on UK and PE / branch triggers.",
                     timeline: "June 16, 2026",
-                    responsible: "Paul / KION Group"
-                },
-                {
-                    name: "KION follow-ups — GEP, A1 coverage & Spain",
-                    desc: "Several KION-side checks remain open from the call.<br><br><strong>Shadow payroll / GEP:</strong> Kelly to share the list of project workers already exceeding 10 days; Brian / KION to continue alignment with BDO on UK and PE / branch triggers.<br><br><strong>Lithuanian A1s:</strong> Dovile to check with the Lithuanian team whether broader country coverage can be applied beyond EU countries.<br><br><strong>Spain:</strong> Irene / KION to complete the remaining Spain data fields once The Cozm confirms Spain is ready.",
-                    timeline: "June 16, 2026",
-                    responsible: "Kelly / Brian / Dovile / Irene / KION Group"
+                    responsible: "Kelly / Brian / KION Group"
                 }
             ],
             'cozm-progress': [
-                {
-                    name: "Workplace address creation notifications",
-                    desc: "KION wants to be notified when new workplace addresses are created, even if the address does not block a submission, so project data can be cleaned consistently. Where recipient information is missing, the employee should not be fully blocked and the A1 flow should continue where possible.<br><br><strong>Actions:</strong> The Cozm to notify Global Mobility when new workplace addresses are created and include employee / trip details in the notification where possible.",
-                    timeline: "June 16, 2026",
-                    responsible: "The Cozm"
-                },
                 {
                     name: "Shadow payroll / GEP monthly reporting",
                     desc: "The monthly reporting process is confirmed. The Cozm will populate Kelly's template for project workers reaching 10 days abroad and send it monthly to Kirsten, Brian and the relevant inboxes. KION will decide which cases are forwarded to Global Expat Pay.<br><br><strong>Note:</strong> Brian flagged two exceptions to the 10-day trigger: UK rules and PE / branch cases, where earlier notification may be needed.<br><br><strong>Action:</strong> The Cozm to prepare the monthly GEP report based on the agreed template.",
@@ -478,10 +489,10 @@
                     responsible: "The Cozm"
                 },
                 {
-                    name: "A1 certificates & employee upload",
-                    desc: "The Lithuanian A1 certificates have been uploaded. For now, they will be treated as valid for EU countries only unless KION confirms that broader coverage can be applied. For future Lithuanian A1 applications, the approach should be to specify the actual countries where employees will work rather than applying for broad all-Europe coverage.<br><br><strong>Actions:</strong> The Cozm to use Lithuanian A1s for EU countries only for now; Raihana / The Cozm to continue rollout of the employee A1 upload function.",
+                    name: "Extract A1 information",
+                    desc: "After an employee uploads an A1 form, Cozm Travel should extract the relevant information to populate the employee questionnaire.<br><br><strong>Action:</strong> The Cozm to update the functionality.",
                     timeline: "June 16, 2026",
-                    responsible: "Raihana / The Cozm"
+                    responsible: "The Cozm"
                 },
                 {
                     name: "Out-of-scope country visibility & US-region reporting",
@@ -562,6 +573,120 @@
                     desc: "The system currently assumes costs are never borne by the host / recipient entity. This may need revisiting now that employees are being posted to Dematic entities who hold the contracts.<br><br><strong>Action:</strong> Ben / Paul / Irene to revisit this with Brian upon his return — TBC.",
                     timeline: "TBC",
                     responsible: "Ben / Paul / Irene"
+                }
+            ],
+            hypercare: [
+                {
+                    name: "Filings not scanned / extraction follow-up",
+                    desc: "Filings that were not scanned are completed; the UK and any others still need extracting. Abdul to share examples and deep research.<br><br><strong>Actions:</strong><ul style='margin-top:8px;margin-left:20px;line-height:2;'><li>Send an email to the GM manager where information is incomplete and to the employee when the information is complete. Ahmad.</li><li>Add a report in the employer portal showing these cases. Raihana / Enoch.</li></ul>",
+                    category: "Employer portal",
+                    priority: "High",
+                    timeline: "ASAP",
+                    responsible: "The Cozm"
+                },
+                {
+                    name: "Immigration assessment & business visa API",
+                    desc: "<strong>Actions:</strong><ul style='margin-top:8px;margin-left:20px;line-height:2;'><li>Review immigration assessment results. Michiel.</li><li>Investigate business visa types through the IATA API and return a simple business visa required result. Ahmad.</li><li>Set up a call with IATA to go through their production API, ideally for Wednesday next week. Ahmad.</li></ul>",
+                    category: "Employee portal",
+                    priority: "High",
+                    timeline: "ASAP",
+                    responsible: "The Cozm"
+                },
+                {
+                    name: "German translation issues",
+                    desc: "Kirsten flagged translation issues to German.",
+                    category: "Employee portal",
+                    priority: "Low",
+                    timeline: "June 24, 2026",
+                    responsible: "The Cozm"
+                },
+                {
+                    name: "Certificate upload data extraction",
+                    desc: "Certificate upload did not read the data from the certificate.<br><br><strong>Actions:</strong><ul style='margin-top:8px;margin-left:20px;line-height:2;'><li>Find the right section and identify what is in it.</li><li>Only Lithuania has OCR at this stage. Abdul will apply regex.</li></ul>",
+                    category: "Employee portal",
+                    priority: "Medium",
+                    timeline: "June 19, 2026",
+                    responsible: "The Cozm"
+                },
+                {
+                    name: "Assistance mode test trip limitation",
+                    desc: "Dovile was filing via assistance mode. There were no real trips, so she could not proceed.",
+                    category: "Assistant",
+                    priority: "High",
+                    timeline: "ASAP",
+                    responsible: "The Cozm"
+                },
+                {
+                    name: "Failed German A1 applications",
+                    desc: "Failed German A1 applications need review and resolution.",
+                    category: "Employee app",
+                    priority: "High",
+                    timeline: "ASAP",
+                    responsible: "The Cozm"
+                },
+                {
+                    name: "Destination workplace liaison person",
+                    desc: "The liaison person should be connected to the destination workplace address, available through a searchable drop-down, and supported by a default liaison person.<br><br><strong>Actions:</strong><ul style='margin-top:8px;margin-left:20px;line-height:2;'><li>Paul to prototype.</li><li>Raihana to complete backend work.</li><li>Junaid to complete frontend work.</li></ul>",
+                    category: "Employer portal",
+                    priority: "Low",
+                    timeline: "June 24, 2026",
+                    responsible: "The Cozm"
+                },
+                {
+                    name: "Employee portal translations and validations",
+                    desc: "Translation and validation issues on the employee portal need review.",
+                    category: "Employee portal",
+                    priority: "Low",
+                    timeline: "June 24, 2026",
+                    responsible: "The Cozm"
+                },
+                {
+                    name: "Workday API missing fields",
+                    desc: "Information that should be in Workday is not being transmitted via the API response, for example Social Security number. Marco needs to be asked to investigate.",
+                    category: "Employee portal",
+                    priority: "Low",
+                    timeline: "June 24, 2026",
+                    responsible: "The Cozm"
+                },
+                {
+                    name: "Switzerland PWN end-to-end testing",
+                    desc: "Switzerland PWN has not been tested end to end properly. The flow asks questions, but most of the information provided by KION has not been addressed.<br><br><strong>Action:</strong> Create a document to understand what the problem is.",
+                    category: "Switzerland PWN",
+                    priority: "High",
+                    timeline: "ASAP",
+                    responsible: "The Cozm"
+                },
+                {
+                    name: "Limit applications to phase-one home countries",
+                    desc: "Reduce the number of applications available to the five home countries.",
+                    category: "Employee portal",
+                    priority: "High",
+                    timeline: "ASAP",
+                    responsible: "The Cozm"
+                },
+                {
+                    name: "Germany & Switzerland validation issues",
+                    desc: "Germany and Switzerland validation issues need review, including activity codes where search is not working well. Activities and rows KION will never use, such as Agriculture, can be filtered out.",
+                    category: "Employee",
+                    priority: "Medium",
+                    timeline: "June 19, 2026",
+                    responsible: "The Cozm"
+                },
+                {
+                    name: "Destination workplace address page",
+                    desc: "Users can add a destination workplace address, but a page is needed in the employer portal.<br><br><strong>Actions:</strong><ul style='margin-top:8px;margin-left:20px;line-height:2;'><li>Paul to complete the design.</li><li>Junaid to complete frontend work.</li></ul>",
+                    category: "Employer portal",
+                    priority: "High",
+                    timeline: "ASAP",
+                    responsible: "The Cozm"
+                },
+                {
+                    name: "Expanded launch countries",
+                    desc: "Expand launch to include additional countries as confirmed by the client, including completion of the employer portal and The Cozm testing and researching all countries, including new ones such as New Zealand.",
+                    category: "Launch",
+                    priority: "High",
+                    timeline: "ASAP",
+                    responsible: "The Cozm"
                 }
             ]
         };
@@ -689,13 +814,14 @@
                 if (m.hidden) return;
                 idx++;
                 const item = document.createElement('div');
-                const isProgress = status.includes('progress');
+                const isProgress = status.includes('progress') || status === 'hypercare';
                 item.className = `milestone-item ${isProgress ? 'in-progress' : status}`;
-                const statusClass = isProgress ? 'status-in-progress' : status === 'completed' ? 'status-completed' : 'status-pending';
-                const statusText = isProgress ? 'In Progress' : status === 'completed' ? 'Complete' : 'Pending';
+                const statusClass = status === 'hypercare' && m.priority ? `status-${m.priority.toLowerCase()}` : isProgress ? 'status-in-progress' : status === 'completed' ? 'status-completed' : 'status-pending';
+                const statusText = status === 'hypercare' && m.priority ? m.priority : isProgress ? 'In Progress' : status === 'completed' ? 'Complete' : 'Pending';
                 let details = '';
-                if (m.timeline || m.responsible) {
+                if (m.timeline || m.responsible || m.category) {
                     details = `<div class="milestone-details">
+                        ${m.category ? `<div class="detail-item"><div class="detail-icon icon-category"></div><div class="detail-text">Category: ${m.category}</div></div>` : ''}
                         ${m.timeline ? `<div class="detail-item"><div class="detail-icon icon-date"></div><div class="detail-text">Target: ${m.timeline}</div></div>` : ''}
                         ${m.responsible ? `<div class="detail-item"><div class="detail-icon icon-team"></div><div class="detail-text">Responsible: ${m.responsible}</div></div>` : ''}
                     </div>`;
