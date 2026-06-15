@@ -166,7 +166,7 @@
                     <div class="stat-label">Overview</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('completed')">
-                    <div class="stat-number completed">38</div>
+                    <div class="stat-number completed">41</div>
                     <div class="stat-label">Completed</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('kion-progress')">
@@ -174,7 +174,7 @@
                     <div class="stat-label">In Progress - KION</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('cozm-progress')">
-                    <div class="stat-number" style="color:#d4a84b;">8</div>
+                    <div class="stat-number" style="color:#d4a84b;">7</div>
                     <div class="stat-label">In Progress - Cozm</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('amex-progress')">
@@ -207,7 +207,7 @@
                 Project Overview
             </h2>
             <div class="quick-stats">
-                <div class="quick-stat"><div class="quick-stat-number">June 12</div><div class="quick-stat-label">Next Major Milestone</div></div>
+                <div class="quick-stat"><div class="quick-stat-number">June 16</div><div class="quick-stat-label">Next Major Milestone</div></div>
                 <div class="quick-stat"><div class="quick-stat-number">June 12</div><div class="quick-stat-label">Go-Live Confirmed</div></div>
             </div>
             <div class="milestone-grid">
@@ -237,10 +237,10 @@
                         <div class="milestone-name">Final Configurations & Approvals</div>
                         <div class="status-badge status-in-progress">In Progress</div>
                     </div>
-                    <div class="milestone-description"><strong>Go-live revised to Friday 12 June 2026.</strong> The date was moved because the IT team has only one person available this week and cannot complete the Workday integration in time. Marko returns on Wednesday 11 June and will action the production whitelisting that day; Friday was chosen to limit early user volume and allow two days to resolve any last-minute issues. UAT calls and the technical call with Abhay are being rescheduled to align with the new date, and Irene and Kirsten will set a reminder in Marko's calendar for Wednesday 11 June. Current priorities are go-live technical prep (Workday IP whitelist and Concur banner), deploying the validated address lookup for Sweden and France and the A1 upload function to production, assistant mode rollout, the new KION contact inbox and questionnaire update, the Switzerland-specific compliance rules, the business-visa CIBT redirect, out-of-scope notification logic, completing the Spain destination configuration before launch, and the rescheduled assistant walkthrough and formal UAT.</div>
+                    <div class="milestone-description"><strong>Go-live remains Friday 12 June 2026.</strong> Current follow-up target is Tuesday 16 June 2026 for hypercare and post-go-live clean-up. Priorities are the project data and workplace address notification flow, broader assistant testing after go-live, monthly shadow payroll / GEP reporting, Lithuanian A1 coverage handling, out-of-scope destination visibility, Switzerland eight-day and weekend / holiday logic, Spain PWN automation, and the CIBT business visa redirect. Completed items now include the Sweden and France address entry fix, the KION contact email / employer questionnaire update, and go-live technical prep for Workday IP whitelisting and the Concur banner.</div>
                     <div class="milestone-details">
-                        <div class="detail-item"><div class="detail-icon icon-date"></div><div class="detail-text">Target: June 12, 2026 | Go-live: June 12, 2026 (Fri)</div></div>
-                        <div class="detail-item"><div class="detail-icon icon-team"></div><div class="detail-text">3 KION items, 8 Cozm items, 9 Non Critical items</div></div>
+                        <div class="detail-item"><div class="detail-icon icon-date"></div><div class="detail-text">Target: June 16, 2026 | Go-live: June 12, 2026 (Fri)</div></div>
+                        <div class="detail-item"><div class="detail-icon icon-team"></div><div class="detail-text">3 KION items, 7 Cozm items, 9 Non Critical items</div></div>
                     </div>
                 </div>
             </div>
@@ -250,7 +250,7 @@
         <div id="completed" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon icon-completed"></div>
-                Completed Milestones (38)
+                Completed Milestones (41)
             </h2>
             <div class="search-filter">
                 <input type="text" class="search-input" placeholder="Search completed milestones..." onkeyup="filterMilestones('completed', this.value)">
@@ -271,7 +271,7 @@
         <div id="cozm-progress" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon" style="background:#BD8941;"></div>
-                In Progress with The Cozm (8)
+                In Progress with The Cozm (7)
             </h2>
             <div id="cozm-progress-list" class="milestone-grid"></div>
         </div>
@@ -439,76 +439,73 @@
                 { name: "Project Info Drop-down", desc: "The Cozm has updated the project linkage from the destination entity/client to destination workplaces. Implemented the workflow for projects added by employees in the assessment module." },
                 { name: "Switzerland - EP4EW and EasyGov mandates", desc: "Swiss mandate switch is postponed to Friday 22 May to give KION one final week to file notifications independently. Germany and Lithuania remain on hold pending receipt confirmation, while Belgium and other non-phase-one countries can progress in parallel. UK and US mandates will be handled once KION confirms postings." },
                 { name: "Employer questionnaires", desc: "Spain remains the main exception point. The Spanish legal representative is unwilling to grant power of attorney to The Cozm, and Irene will reconfirm the Spanish team's position on CoC signing while the signature field is made optional to avoid blocking submissions." },
-                { name: "New custom SSO login screen — tested & approved", desc: "The new custom SSO login screen was tested live on the call (Jun 3) by Irene. Login via SSO worked successfully and Irene confirmed KION will be happy with the design. No further actions required." }
+                { name: "New custom SSO login screen — tested & approved", desc: "The new custom SSO login screen was tested live on the call (Jun 3) by Irene. Login via SSO worked successfully and Irene confirmed KION will be happy with the design. No further actions required." },
+                { name: "Address entry — validated lookup (Sweden & France)", desc: "The Sweden and France address entry issue has been resolved in the employer portal. Validated address lookup is available where those authorities require pre-validated workplace addresses. No further action required." },
+                { name: "Contact email & employer questionnaire update", desc: "The new KION contact email has been updated in the relevant employer questionnaires. No further action required." },
+                { name: "Go-live technical prep — Workday IP whitelist & Concur banner", desc: "Go-live technical preparation has been completed, including the Workday IP whitelist and Concur banner readiness for the phase-one launch. No further action required." }
             ],
             'kion-progress': [
                 {
-                    name: "User Acceptance Testing (UAT)",
-                    desc: "German assistant walkthrough confirmed for Friday 29 May at 09:00 UK / 10:00 Germany with 5-6 participants including Nicole, Thomas, and a Works Council representative. Formal UAT is to be scheduled separately this week.",
-                    timeline: "June 12, 2026",
+                    name: "User testing after go-live",
+                    desc: "Broader assistant testing will happen after go-live because the live environment includes auto-populated fields that were not visible during earlier testing. KION will try to find one or two additional employees for any final pre-go-live checks if possible.<br><br><strong>Actions:</strong> Irene to check whether the Spanish team can support testing; Kirsten to check whether a German tester is available; Paul / The Cozm to support any additional pre-go-live testing.",
+                    timeline: "June 16, 2026",
                     responsible: "KION Group & The Cozm"
                 },
                 {
-                    name: "Project data — KION actions",
-                    desc: "Sweden and France require a validated address lookup for project addresses — addresses must be searched via the address bar rather than entered as free text (UX fix tracked separately with The Cozm). Spain remains out of scope as a phase-one destination country: Irene will pause Spain project data entry until the province dropdown is fixed, KION will provide the REA number needed for future Spanish PWN automation, and KION will share the Spanish HR team email addresses with The Cozm for forwarding applications.",
-                    timeline: "June 12, 2026",
-                    responsible: "KION Group"
+                    name: "Project data & workplace address flow",
+                    desc: "KION will continue cleaning project data over time. Where an employee creates a new workplace address and recipient information is missing, the employee should not be fully blocked; the A1 flow should continue where possible while Global Mobility is notified to complete or validate the missing information.<br><br><strong>Action:</strong> Paul / KION to schedule a short separate call with The Cozm to walk through the flow.",
+                    timeline: "June 16, 2026",
+                    responsible: "Paul / KION Group"
                 },
                 {
-                    name: "Assistance mode",
-                    desc: "Irrum's assistant spreadsheet has been received and Paul confirmed it contains what is needed — the mapping of assistant email to employee Workday ID is sufficient.<br><br><strong>Status (Jun 3):</strong> The assistant spreadsheet has been received but some Workday IDs are still missing, primarily from the US and one or two EMEA records. Dovile confirmed these are being chased and an updated list will follow. The Cozm (Raihana) will maintain a live internal table to manage the assistant-employee mapping. Agreed model: assistants do not see personal data, known data is stored for reuse, and employees are notified for any missing information.<br><br><strong>Action:</strong> Dovile / Irrum to send an updated spreadsheet with the missing Workday IDs.",
-                    timeline: "June 12, 2026",
-                    responsible: "KION (Dovile / Irrum)"
+                    name: "KION follow-ups — GEP, A1 coverage & Spain",
+                    desc: "Several KION-side checks remain open from the call.<br><br><strong>Shadow payroll / GEP:</strong> Kelly to share the list of project workers already exceeding 10 days; Brian / KION to continue alignment with BDO on UK and PE / branch triggers.<br><br><strong>Lithuanian A1s:</strong> Dovile to check with the Lithuanian team whether broader country coverage can be applied beyond EU countries.<br><br><strong>Spain:</strong> Irene / KION to complete the remaining Spain data fields once The Cozm confirms Spain is ready.",
+                    timeline: "June 16, 2026",
+                    responsible: "Kelly / Brian / Dovile / Irene / KION Group"
                 }
             ],
             'cozm-progress': [
                 {
-                    name: "A1 certificate upload",
-                    desc: "The A1 certificate upload field is implemented and will be deployed to production.<br><br><strong>Status (Jun 3):</strong> Dovile shared approximately 75 existing Lithuanian A1 certificates for Raihana to upload to the system. For all other countries, employees will be prompted to upload their own A1 copy via the employee portal. <strong>User guides:</strong> Irene has shared the final onboarding video and confirmed the user guide version via Teams chat (Done).<br><br><strong>Actions:</strong> Raihana to upload the Lithuanian A1 certificates; Raihana / Dev to deploy the A1 upload function to production.",
-                    timeline: "June 12, 2026",
+                    name: "Workplace address creation notifications",
+                    desc: "KION wants to be notified when new workplace addresses are created, even if the address does not block a submission, so project data can be cleaned consistently. Where recipient information is missing, the employee should not be fully blocked and the A1 flow should continue where possible.<br><br><strong>Actions:</strong> The Cozm to notify Global Mobility when new workplace addresses are created and include employee / trip details in the notification where possible.",
+                    timeline: "June 16, 2026",
+                    responsible: "The Cozm"
+                },
+                {
+                    name: "Shadow payroll / GEP monthly reporting",
+                    desc: "The monthly reporting process is confirmed. The Cozm will populate Kelly's template for project workers reaching 10 days abroad and send it monthly to Kirsten, Brian and the relevant inboxes. KION will decide which cases are forwarded to Global Expat Pay.<br><br><strong>Note:</strong> Brian flagged two exceptions to the 10-day trigger: UK rules and PE / branch cases, where earlier notification may be needed.<br><br><strong>Action:</strong> The Cozm to prepare the monthly GEP report based on the agreed template.",
+                    timeline: "June 16, 2026",
+                    responsible: "The Cozm"
+                },
+                {
+                    name: "A1 certificates & employee upload",
+                    desc: "The Lithuanian A1 certificates have been uploaded. For now, they will be treated as valid for EU countries only unless KION confirms that broader coverage can be applied. For future Lithuanian A1 applications, the approach should be to specify the actual countries where employees will work rather than applying for broad all-Europe coverage.<br><br><strong>Actions:</strong> The Cozm to use Lithuanian A1s for EU countries only for now; Raihana / The Cozm to continue rollout of the employee A1 upload function.",
+                    timeline: "June 16, 2026",
                     responsible: "Raihana / The Cozm"
                 },
                 {
-                    name: "Out-of-scope country notification logic",
-                    desc: "Out-of-scope travel handling is to be added in the platform, split between immediate alerts and a weekly report.<br><br><strong>Immediate notifications (same day):</strong><ul style='margin-top:8px;margin-left:20px;line-height:2;'><li>Immigration requirement identified</li><li>Payroll obligation identified</li><li>PWN required for a country not yet live in the system</li><li>Switzerland trip booked with less than 8 days' notice</li></ul><strong>Weekly report:</strong> all other out-of-scope country trips. Starting with a weekly cadence — can be adjusted to bi-weekly or monthly if too noisy.<br><br><strong>Action:</strong> Paul / Raihana to build the automated notification logic per the split above.",
-                    timeline: "June 12, 2026",
-                    responsible: "Paul / Raihana / The Cozm"
+                    name: "Out-of-scope country visibility & US-region reporting",
+                    desc: "KION wants visibility where employees travel from phase-one home countries to non-phase-one destination countries. For the first weeks, the team agreed not to overload the process with too much reporting and to review actual volumes during hypercare. A separate US-region movement report may be needed after one or two weeks for Melissa and the US payroll team.<br><br><strong>Actions:</strong> The Cozm / KION to review out-of-scope country volumes during hypercare; The Cozm to prepare US-region movement reporting after one or two weeks if needed.",
+                    timeline: "June 16, 2026",
+                    responsible: "The Cozm / KION Group"
                 },
                 {
-                    name: "Address entry — validated lookup (Sweden & France)",
-                    desc: "Irene flagged that free-text address entry is not working for Sweden and France. These countries require a validated address lookup — users must search via the address bar rather than type manually. The same applies to any country where the authorities only accept pre-validated addresses.<br><br><strong>Status (Jun 3):</strong> The validated address lookup for Sweden and France is implemented but not yet deployed to production — close to ready.<br><br><strong>Action:</strong> Raihana / Dev to deploy the validated address lookup to production.",
-                    timeline: "June 12, 2026",
-                    responsible: "Raihana / Dev / The Cozm"
+                    name: "Switzerland — 8-day rule & weekend/holiday logic",
+                    desc: "The Switzerland eight-day rule remains in scope. If a Switzerland trip is booked too late, Global Mobility should be notified rather than automatically proceeding. Weekend and public holiday logic is also being incorporated so that only actual working days are counted where possible.<br><br><strong>Actions:</strong> The Cozm to keep Switzerland eight-day notification logic in place and include weekend / Sunday work questions in the flow.",
+                    timeline: "June 16, 2026",
+                    responsible: "The Cozm"
                 },
                 {
-                    name: "Spain destination — automation & data entry",
-                    desc: "Spain was originally out of phase-one scope and earmarked for manual handling post go-live. The integration covers most regions via Ley 45, but two autonomous communities (Cataluña and the Basque Country) still use separate portals.<br><br><strong>Status (Jun 3):</strong> With go-live moved to 12 June, the Spain PWN automation will be complete before launch. Michiel will notify Irene once the Spain destination country configuration is ready so she can add the missing REA numbers and the remaining project data.<br><br><strong>Action:</strong> Michiel to notify Irene when Spain is ready for data entry; KION to share Spanish HR team email addresses with The Cozm for forwarding applications.",
-                    timeline: "June 12, 2026",
-                    responsible: "Michiel / The Cozm & KION Group"
-                },
-                {
-                    name: "Contact email & employer questionnaire update",
-                    desc: "KION has created a new dedicated inbox for all Cozm Travel-related queries. The current employer questionnaire references an individual's name (Amy) and an outdated email address — both need to be updated before go-live.<br><br><strong>Status (Jun 3):</strong> The new dedicated KION Cozm Travel inbox is confirmed. The same address should be referenced in the user guide and made visible in the platform for employees with questions.<br><br><strong>Actions:</strong> Raihana to update the employer questionnaire with the new KION contact email; Paul / Dev to add the KION contact email to the user guide and the platform help text.",
-                    timeline: "June 12, 2026",
-                    responsible: "Raihana / Paul / Dev"
-                },
-                {
-                    name: "Go-live technical prep — Workday IP whitelist & Concur banner",
-                    desc: "Two outstanding technical items must be completed before go-live. <strong>Workday IP whitelist:</strong> The Cozm's production IP must be whitelisted — Raihana to email regarding the IP whitelist and production Workday activation. <strong>Concur banner:</strong> to be enabled for all five phase-one home countries on the production environment — Paul to send the updated HTML banner link to Abhay.<br><br><strong>Status (Jun 3):</strong> This is the driver behind the revised 12 June go-live — the IT team has only one person available this week and cannot complete the Workday integration in time. Marko returns on Wednesday 11 June and will action the production whitelisting that day. Irene and Kirsten will put a reminder in Marko's calendar for Wednesday 11 June.",
-                    timeline: "June 12, 2026",
-                    responsible: "Marko / Raihana / Paul / KION Group"
-                },
-                {
-                    name: "Switzerland — 8-day rule & weekend/holiday exclusions",
-                    desc: "Two Switzerland-specific compliance points were raised.<br><br><strong>8-day notification rule:</strong> If an employee books a trip to Switzerland with less than 8 days' notice, The Cozm must <strong>not</strong> submit the PWN to the authorities. Instead, an immediate alert should go to the global mobility team so they can contact the project manager directly. Exceptions apply for emergency repairs and for employees already on-site for the same project within the past two months.<br><br><strong>Weekend & public holiday exclusions:</strong> PWNs should exclude weekends and public holidays from the day count to protect KION's 90-day company allowance. The system should ask the employee whether they will work on weekends, as this cannot be assumed. If weekend work is indicated, this should be flagged to the global mobility team for manual handling (Sunday work permits are not yet automated).<br><br><strong>Actions:</strong> Paul / Dev to implement the 8-day rule logic (flag to GM team instead of submitting); Paul / Dev to confirm the status of the weekend / public holiday exclusion in the PWN day count; Michiel to clarify the Sunday work permit process for The Cozm team.",
-                    timeline: "June 12, 2026",
-                    responsible: "Paul / Dev / Michiel"
+                    name: "Spain PWN automation",
+                    desc: "Spain PWN automation is still being finalised. Once ready, Michiel will confirm so KION can complete the remaining data fields.<br><br><strong>Action:</strong> Michiel / The Cozm to confirm once Spain is ready.",
+                    timeline: "June 16, 2026",
+                    responsible: "Michiel / The Cozm"
                 },
                 {
                     name: "Business visa flow — CIBT redirect",
-                    desc: "When an employee requires a business visa, the preferred approach is to redirect them directly to CIBT (KION's visa provider) via a link in the platform — avoiding unnecessary involvement of the global mobility team. Work permits are not connected to an external provider yet but are on the roadmap. Immigration alerts are to be sent immediately to the new KION inbox.<br><br><strong>Action:</strong> Paul / Dev to add the CIBT link to the platform for business visa cases.",
-                    timeline: "June 12, 2026",
-                    responsible: "Paul / Dev"
+                    desc: "The business visa flow remains dependent on input from CIBT. Once confirmed, the platform should direct employees to CIBT directly where a business visa is required.<br><br><strong>Actions:</strong> Michiel to follow up with CIBT if no response is received; The Cozm to add the CIBT link once confirmed.",
+                    timeline: "June 16, 2026",
+                    responsible: "Michiel / The Cozm"
                 }
             ],
             'amex-progress': [
@@ -539,7 +536,7 @@
                 {
                     name: "Danish salary threshold support",
                     desc: "<strong>Status (Apr 15):</strong> Irene requested contacts for the Danish authority that can provide a written salary table ruling. The existing CBA (collective bargaining agreement) is too flexible — KION needs clear, defined thresholds for compliance purposes.<br><br><strong>Action:</strong> Michiel to forward Ben's Danish authority contact details today (Apr 15). The authority can provide written confirmation on salary thresholds, giving KION a clear compliance baseline.",
-                    timeline: "June 12, 2026",
+                    timeline: "June 16, 2026",
                     responsible: "Michiel / The Cozm"
                 },
                 {
