@@ -166,7 +166,7 @@
                     <div class="stat-label">Overview</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('completed')">
-                    <div class="stat-number completed">44</div>
+                    <div class="stat-number completed">45</div>
                     <div class="stat-label">Completed</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('kion-progress')">
@@ -174,7 +174,7 @@
                     <div class="stat-label">In Progress - KION</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('cozm-progress')">
-                    <div class="stat-number" style="color:#d4a84b;">10</div>
+                    <div class="stat-number" style="color:#d4a84b;">9</div>
                     <div class="stat-label">In Progress - Cozm</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('amex-progress')">
@@ -237,10 +237,10 @@
                         <div class="milestone-name">Final Configurations & Approvals</div>
                         <div class="status-badge status-in-progress">In Progress</div>
                     </div>
-                    <div class="milestone-description"><strong>Go-live completed Friday 12 June 2026; the project is now in active hypercare.</strong> Next review target is Wednesday 1 July 2026. Following the 22 June catch-up, the current priorities are: refining the activity categories (CoCs for US-to-Europe meetings paused, with clearer "business meetings" wording and exemptions on the employment lawyer's advice), data-privacy consent for assistance mode, a sustainable way to capture project data, embedding KION's immigration position matrix, Lithuania user testing, month-end shadow payroll / GEP reporting, A1 data extraction, the Concur vs Cozm usage check, and phase-two country and immigration-provider readiness. US state-to-state tax and withholding will be aligned with BDO Global Expat Pay after the initial hypercare period.</div>
+                    <div class="milestone-description"><strong>Go-live completed Friday 12 June 2026; the project is now in active hypercare.</strong> Next review target is Wednesday 1 July 2026. Following the 22 June catch-up, the current priorities are: refining the activity categories (CoCs for US-to-Europe meetings paused, with clearer "business meetings" wording and exemptions on the employment lawyer's advice), data-privacy consent for assistance mode, a sustainable way to capture project data, embedding KION's immigration position matrix, Lithuania user testing, month-end shadow payroll / GEP reporting, A1 data extraction, and phase-two country and immigration-provider readiness. US state-to-state tax and withholding will be aligned with BDO Global Expat Pay after the initial hypercare period.</div>
                     <div class="milestone-details">
                         <div class="detail-item"><div class="detail-icon icon-date"></div><div class="detail-text">Next review: July 1, 2026 | Go-live: June 12, 2026 (Fri) — now in hypercare</div></div>
-                        <div class="detail-item"><div class="detail-icon icon-team"></div><div class="detail-text">3 KION items, 10 Cozm items, 9 Non Critical items</div></div>
+                        <div class="detail-item"><div class="detail-icon icon-team"></div><div class="detail-text">3 KION items, 9 Cozm items, 9 Non Critical items</div></div>
                     </div>
                 </div>
             </div>
@@ -250,7 +250,7 @@
         <div id="completed" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon icon-completed"></div>
-                Completed Milestones (44)
+                Completed Milestones (45)
             </h2>
             <div class="search-filter">
                 <input type="text" class="search-input" placeholder="Search completed milestones..." onkeyup="filterMilestones('completed', this.value)">
@@ -271,7 +271,7 @@
         <div id="cozm-progress" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon" style="background:#BD8941;"></div>
-                In Progress with The Cozm (10)
+                In Progress with The Cozm (9)
             </h2>
             <div id="cozm-progress-list" class="milestone-grid"></div>
         </div>
@@ -445,7 +445,8 @@
                 { name: "Go-live technical prep — Workday IP whitelist & Concur banner", desc: "Go-live technical preparation has been completed, including the Workday IP whitelist and Concur banner readiness for the phase-one launch. No further action required." },
                 { name: "Project data & workplace address flow", desc: "KION will continue cleaning project data over time. Where an employee creates a new workplace address and recipient information is missing, the employee should not be fully blocked; the A1 flow should continue where possible while Global Mobility is notified to complete or validate the missing information. The flow walkthrough has been moved to completed tracking." },
                 { name: "Workplace address creation notifications", desc: "KION wants to be notified when new workplace addresses are created, even if the address does not block a submission, so project data can be cleaned consistently. The Cozm notification action has been moved to completed tracking." },
-                { name: "A1 document upload — confirmed optional", desc: "On the 22 June call KION confirmed the A1 certificate upload should remain <strong>optional</strong> for now. Many employees know they hold an A1 but do not have the document to hand, so making upload mandatory would block submissions. The assessment still recognises a declared A1 and does not request a new one where social security is already covered." }
+                { name: "A1 document upload — confirmed optional", desc: "On the 22 June call KION confirmed the A1 certificate upload should remain <strong>optional</strong> for now. Many employees know they hold an A1 but do not have the document to hand, so making upload mandatory would block submissions. The assessment still recognises a declared A1 and does not request a new one where social security is already covered." },
+                { name: "Concur vs Cozm usage check", desc: "Approach confirmed for identifying employees who booked through Concur but did not complete the Cozm Travel assessment. A first report is shared so Kirsten can send reminders during hypercare; where the list includes US travellers, state and destination details are added before reminders are sent. The process may be automated later (Benjamin / Paul to review)." }
             ],
             'kion-progress': [
                 {
@@ -503,12 +504,6 @@
                     desc: "The Cozm is extracting data from A1 certificates so relevant details can be pre-populated in the employee portal, and so the assessment reliably recognises an existing, valid A1 and does not prompt for a new one (see the UK employee case).<br><br><strong>Action:</strong> Raihana / The Cozm to continue A1 data extraction and pre-population.",
                     timeline: "July 1, 2026",
                     responsible: "Raihana / The Cozm"
-                },
-                {
-                    name: "Concur vs Cozm usage check",
-                    desc: "KION wants to identify employees who booked through Concur but did not complete the Cozm Travel assessment. A first report is being prepared so Kirsten can send reminders during hypercare. The initial list appears to include many US travellers, so state and destination details should be checked before reminders are sent. The process may be automated later.<br><br><strong>Actions:</strong> Paul / Raihana to share the first Concur vs Cozm usage report and add state / destination details where relevant; Benjamin / Paul to review how this report can be automated later.",
-                    timeline: "July 1, 2026",
-                    responsible: "Paul / Raihana / Benjamin"
                 },
                 {
                     name: "Spain PWN automation",
