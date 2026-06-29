@@ -170,11 +170,11 @@
                     <div class="stat-label">Completed</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('kion-progress')">
-                    <div class="stat-number in-progress">4</div>
+                    <div class="stat-number in-progress">3</div>
                     <div class="stat-label">In Progress - KION</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('cozm-progress')">
-                    <div class="stat-number" style="color:#d4a84b;">12</div>
+                    <div class="stat-number" style="color:#d4a84b;">10</div>
                     <div class="stat-label">In Progress - Cozm</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('amex-progress')">
@@ -237,10 +237,10 @@
                         <div class="milestone-name">Final Configurations & Approvals</div>
                         <div class="status-badge status-in-progress">In Progress</div>
                     </div>
-                    <div class="milestone-description"><strong>Go-live completed Friday 12 June 2026; the project is now in active hypercare.</strong> Next review target is Wednesday 1 July 2026. Following the 22 June catch-up, the current priorities are: refining the activity categories (CoCs for US-to-Europe meetings paused, with clearer "business meetings" wording and exemptions on the employment lawyer's advice), data-privacy consent for assistance mode, a sustainable way to capture project data, embedding KION's immigration position matrix, Lithuania user testing, month-end shadow payroll / GEP reporting, A1 data extraction, out-of-scope and US-region reporting, the Concur vs Cozm usage check, and phase-two country and immigration-provider readiness. US state-to-state tax and withholding will be aligned with BDO Global Expat Pay after the initial hypercare period.</div>
+                    <div class="milestone-description"><strong>Go-live completed Friday 12 June 2026; the project is now in active hypercare.</strong> Next review target is Wednesday 1 July 2026. Following the 22 June catch-up, the current priorities are: refining the activity categories (CoCs for US-to-Europe meetings paused, with clearer "business meetings" wording and exemptions on the employment lawyer's advice), data-privacy consent for assistance mode, a sustainable way to capture project data, embedding KION's immigration position matrix, Lithuania user testing, month-end shadow payroll / GEP reporting, A1 data extraction, the Concur vs Cozm usage check, and phase-two country and immigration-provider readiness. US state-to-state tax and withholding will be aligned with BDO Global Expat Pay after the initial hypercare period.</div>
                     <div class="milestone-details">
                         <div class="detail-item"><div class="detail-icon icon-date"></div><div class="detail-text">Next review: July 1, 2026 | Go-live: June 12, 2026 (Fri) — now in hypercare</div></div>
-                        <div class="detail-item"><div class="detail-icon icon-team"></div><div class="detail-text">4 KION items, 12 Cozm items, 9 Non Critical items</div></div>
+                        <div class="detail-item"><div class="detail-icon icon-team"></div><div class="detail-text">3 KION items, 10 Cozm items, 9 Non Critical items</div></div>
                     </div>
                 </div>
             </div>
@@ -262,7 +262,7 @@
         <div id="kion-progress" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon icon-in-progress"></div>
-                In Progress with KION (4)
+                In Progress with KION (3)
             </h2>
             <div id="kion-progress-list" class="milestone-grid"></div>
         </div>
@@ -271,7 +271,7 @@
         <div id="cozm-progress" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon" style="background:#BD8941;"></div>
-                In Progress with The Cozm (12)
+                In Progress with The Cozm (10)
             </h2>
             <div id="cozm-progress-list" class="milestone-grid"></div>
         </div>
@@ -465,12 +465,6 @@
                     desc: "KION is running a structured selection process for a new immigration provider, led by Mike Hibbert and team, who are gathering internal feedback (Irene and Cynthia have already contributed). An RFI will shortlist providers, with the possibility of different providers by region. KION is aiming to confirm a provider by the end of 2026. The Cozm will be involved to confirm what is needed for a properly working integration and to ensure the chosen provider can connect to Cozm Travel.<br><br><strong>Actions:</strong> Mike / KION to run the RFI and involve The Cozm; The Cozm to feed in integration requirements; alignment to continue ahead of the September Berlin session.",
                     timeline: "July 1, 2026",
                     responsible: "Mike Hibbert / KION Group / The Cozm"
-                },
-                {
-                    name: "A1 over-application — UK employee case",
-                    desc: "A UK employee who already holds a two-year HMRC A1 declared it in the assessment but did not upload it, then filed a new A1 for a two-day trip to Belgium even though the assessment did not require one (social security showed green; only the PWN was flagged). The Cozm is reviewing how the assessment was bypassed and will cancel the unnecessary application.<br><br><strong>Actions:</strong> Irene to arrange a short call with the employee to understand the user journey; Paul / The Cozm to confirm the erroneous A1 is cancelled and to tighten the flow so a not-required A1 cannot be filed.",
-                    timeline: "July 1, 2026",
-                    responsible: "Irene / Paul / The Cozm"
                 }
             ],
             'cozm-progress': [
@@ -511,22 +505,10 @@
                     responsible: "Raihana / The Cozm"
                 },
                 {
-                    name: "Out-of-scope country visibility & US-region reporting",
-                    desc: "The Cozm sends a weekly report for travel to non-phase-one destination countries. A separate US-region report is being prepared for Melissa so she can cross-check cross-state travel and confirm all relevant employees are in scope; Kirsten asked to receive it first. Melissa confirmed she does not need The Cozm to take US tax calculations further — US payroll already has a system — but does want complete travel data, so all US travellers should remain in scope for data capture.<br><br><strong>Actions:</strong> The Cozm to include out-of-scope destination countries in weekly reporting; The Cozm to prepare the US-region report and share it with Kirsten first.",
-                    timeline: "July 1, 2026",
-                    responsible: "The Cozm"
-                },
-                {
                     name: "Concur vs Cozm usage check",
                     desc: "KION wants to identify employees who booked through Concur but did not complete the Cozm Travel assessment. A first report is being prepared so Kirsten can send reminders during hypercare. The initial list appears to include many US travellers, so state and destination details should be checked before reminders are sent. The process may be automated later.<br><br><strong>Actions:</strong> Paul / Raihana to share the first Concur vs Cozm usage report and add state / destination details where relevant; Benjamin / Paul to review how this report can be automated later.",
                     timeline: "July 1, 2026",
                     responsible: "Paul / Raihana / Benjamin"
-                },
-                {
-                    name: "Switzerland — 8-day rule & weekend/holiday logic",
-                    desc: "The Switzerland eight-day rule is being implemented so late Switzerland PWN cases are blocked from automatic submission and referred to Global Mobility for review. Weekend and public holiday exclusion logic is also being checked and should be tested shortly.<br><br><strong>Actions:</strong> Amine / The Cozm to finalise and test the Switzerland eight-day rule; Amine / The Cozm to confirm weekend and public holiday logic.",
-                    timeline: "July 1, 2026",
-                    responsible: "Amine / The Cozm"
                 },
                 {
                     name: "Spain PWN automation",
