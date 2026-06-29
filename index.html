@@ -166,15 +166,15 @@
                     <div class="stat-label">Overview</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('completed')">
-                    <div class="stat-number completed">43</div>
+                    <div class="stat-number completed">44</div>
                     <div class="stat-label">Completed</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('kion-progress')">
-                    <div class="stat-number in-progress">2</div>
+                    <div class="stat-number in-progress">4</div>
                     <div class="stat-label">In Progress - KION</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('cozm-progress')">
-                    <div class="stat-number" style="color:#d4a84b;">8</div>
+                    <div class="stat-number" style="color:#d4a84b;">12</div>
                     <div class="stat-label">In Progress - Cozm</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('amex-progress')">
@@ -194,7 +194,7 @@
                     <div class="stat-label">Countries</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number" style="color:#7dd4da;">71%</div>
+                    <div class="stat-number" style="color:#7dd4da;">72%</div>
                     <div class="stat-label">Overall Progress</div>
                 </div>
             </div>
@@ -207,8 +207,8 @@
                 Project Overview
             </h2>
             <div class="quick-stats">
-                <div class="quick-stat"><div class="quick-stat-number">June 23</div><div class="quick-stat-label">Next Major Milestone</div></div>
-                <div class="quick-stat"><div class="quick-stat-number">June 12</div><div class="quick-stat-label">Go-Live Confirmed</div></div>
+                <div class="quick-stat"><div class="quick-stat-number">July 1</div><div class="quick-stat-label">Next Review Target</div></div>
+                <div class="quick-stat"><div class="quick-stat-number">June 12</div><div class="quick-stat-label">Go-Live Completed</div></div>
             </div>
             <div class="milestone-grid">
                 <div class="milestone-item completed">
@@ -237,10 +237,10 @@
                         <div class="milestone-name">Final Configurations & Approvals</div>
                         <div class="status-badge status-in-progress">In Progress</div>
                     </div>
-                    <div class="milestone-description"><strong>Go-live remains Friday 12 June 2026.</strong> Current follow-up target is Tuesday 23 June 2026 for post-go-live follow-up. Priorities are Lithuania testing, month-end shadow payroll / GEP reporting, A1 data extraction, out-of-scope and US-region reporting, the Concur vs Cozm usage check, Workday data transfer follow-up, Switzerland eight-day and weekend / holiday logic, Spain PWN automation, the CIBT business visa redirect, and phase-two country readiness.</div>
+                    <div class="milestone-description"><strong>Go-live completed Friday 12 June 2026; the project is now in active hypercare.</strong> Next review target is Wednesday 1 July 2026. Following the 22 June catch-up, the current priorities are: refining the activity categories (CoCs for US-to-Europe meetings paused, with clearer "business meetings" wording and exemptions on the employment lawyer's advice), data-privacy consent for assistance mode, a sustainable way to capture project data, embedding KION's immigration position matrix, Lithuania user testing, month-end shadow payroll / GEP reporting, A1 data extraction, out-of-scope and US-region reporting, the Concur vs Cozm usage check, and phase-two country and immigration-provider readiness. US state-to-state tax and withholding will be aligned with BDO Global Expat Pay after the initial hypercare period.</div>
                     <div class="milestone-details">
-                        <div class="detail-item"><div class="detail-icon icon-date"></div><div class="detail-text">Target: June 23, 2026 | Go-live: June 12, 2026 (Fri)</div></div>
-                        <div class="detail-item"><div class="detail-icon icon-team"></div><div class="detail-text">2 KION items, 8 Cozm items, 9 Non Critical items</div></div>
+                        <div class="detail-item"><div class="detail-icon icon-date"></div><div class="detail-text">Next review: July 1, 2026 | Go-live: June 12, 2026 (Fri) — now in hypercare</div></div>
+                        <div class="detail-item"><div class="detail-icon icon-team"></div><div class="detail-text">4 KION items, 12 Cozm items, 9 Non Critical items</div></div>
                     </div>
                 </div>
             </div>
@@ -250,7 +250,7 @@
         <div id="completed" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon icon-completed"></div>
-                Completed Milestones (43)
+                Completed Milestones (44)
             </h2>
             <div class="search-filter">
                 <input type="text" class="search-input" placeholder="Search completed milestones..." onkeyup="filterMilestones('completed', this.value)">
@@ -262,7 +262,7 @@
         <div id="kion-progress" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon icon-in-progress"></div>
-                In Progress with KION (2)
+                In Progress with KION (4)
             </h2>
             <div id="kion-progress-list" class="milestone-grid"></div>
         </div>
@@ -271,7 +271,7 @@
         <div id="cozm-progress" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon" style="background:#BD8941;"></div>
-                In Progress with The Cozm (8)
+                In Progress with The Cozm (12)
             </h2>
             <div id="cozm-progress-list" class="milestone-grid"></div>
         </div>
@@ -444,69 +444,106 @@
                 { name: "Contact email & employer questionnaire update", desc: "The new KION contact email has been updated in the relevant employer questionnaires. No further action required." },
                 { name: "Go-live technical prep — Workday IP whitelist & Concur banner", desc: "Go-live technical preparation has been completed, including the Workday IP whitelist and Concur banner readiness for the phase-one launch. No further action required." },
                 { name: "Project data & workplace address flow", desc: "KION will continue cleaning project data over time. Where an employee creates a new workplace address and recipient information is missing, the employee should not be fully blocked; the A1 flow should continue where possible while Global Mobility is notified to complete or validate the missing information. The flow walkthrough has been moved to completed tracking." },
-                { name: "Workplace address creation notifications", desc: "KION wants to be notified when new workplace addresses are created, even if the address does not block a submission, so project data can be cleaned consistently. The Cozm notification action has been moved to completed tracking." }
+                { name: "Workplace address creation notifications", desc: "KION wants to be notified when new workplace addresses are created, even if the address does not block a submission, so project data can be cleaned consistently. The Cozm notification action has been moved to completed tracking." },
+                { name: "A1 document upload — confirmed optional", desc: "On the 22 June call KION confirmed the A1 certificate upload should remain <strong>optional</strong> for now. Many employees know they hold an A1 but do not have the document to hand, so making upload mandatory would block submissions. The assessment still recognises a declared A1 and does not request a new one where social security is already covered." }
             ],
             'kion-progress': [
                 {
                     name: "User testing after go-live",
-                    desc: "Germany testing with the assistants took place this morning. Lithuania testing should be scheduled with Dovile.<br><br><strong>Actions:</strong> Kirsten / Paul to reschedule German assistant testing if needed; Michiel to check with Dovile on Lithuania testing.",
-                    timeline: "June 23, 2026",
+                    desc: "German assistant testing took place on the morning of 22 June and went well — feedback was that the tool is easy to handle, with only minor comments. Lithuania testing still needs to be scheduled.<br><br><strong>Actions:</strong> Michiel to arrange Lithuania testing with Dovile; Kirsten / Paul to capture and triage the assistants' minor comments.",
+                    timeline: "July 1, 2026",
                     responsible: "Kirsten / Paul / Michiel"
                 },
                 {
                     name: "KION follow-ups — reporting, Workday & phase two",
-                    desc: "KION-side follow-ups remain open across reporting, Workday data, reminders, and rollout planning.<br><br><strong>Actions:</strong><ul style='margin-top:8px;margin-left:20px;line-height:2;'><li>Kelly to send the list of project workers already over 10 days.</li><li>Kirsten to follow up on the Workday incident for social security number and city of birth.</li><li>Kirsten to receive the US-region report before Melissa and align with Melissa on how to use it.</li><li>Kirsten to send reminders from the first Concur vs Cozm usage report during initial hypercare.</li><li>KION to finalise and share the phase-two country list.</li></ul>",
-                    timeline: "June 23, 2026",
+                    desc: "KION-side follow-ups remain open across reporting, Workday data, reminders, and rollout planning.<br><br><strong>Actions:</strong><ul style='margin-top:8px;margin-left:20px;line-height:2;'><li>Kelly to send the list of project workers already over the 10-day threshold.</li><li>Kirsten to follow up on the Workday incident for social security number and city of birth.</li><li>Kirsten to receive the US-region report before Melissa and align with her on how to use it.</li><li>Kirsten to send reminders from the first Concur vs Cozm usage report during hypercare.</li><li>KION to finalise and share the phase-two country list.</li></ul>",
+                    timeline: "July 1, 2026",
                     responsible: "Kelly / Kirsten / KION Group"
+                },
+                {
+                    name: "Immigration provider selection (RFI)",
+                    desc: "KION is running a structured selection process for a new immigration provider, led by Mike Hibbert and team, who are gathering internal feedback (Irene and Cynthia have already contributed). An RFI will shortlist providers, with the possibility of different providers by region. KION is aiming to confirm a provider by the end of 2026. The Cozm will be involved to confirm what is needed for a properly working integration and to ensure the chosen provider can connect to Cozm Travel.<br><br><strong>Actions:</strong> Mike / KION to run the RFI and involve The Cozm; The Cozm to feed in integration requirements; alignment to continue ahead of the September Berlin session.",
+                    timeline: "July 1, 2026",
+                    responsible: "Mike Hibbert / KION Group / The Cozm"
+                },
+                {
+                    name: "A1 over-application — UK employee case",
+                    desc: "A UK employee who already holds a two-year HMRC A1 declared it in the assessment but did not upload it, then filed a new A1 for a two-day trip to Belgium even though the assessment did not require one (social security showed green; only the PWN was flagged). The Cozm is reviewing how the assessment was bypassed and will cancel the unnecessary application.<br><br><strong>Actions:</strong> Irene to arrange a short call with the employee to understand the user journey; Paul / The Cozm to confirm the erroneous A1 is cancelled and to tighten the flow so a not-required A1 cannot be filed.",
+                    timeline: "July 1, 2026",
+                    responsible: "Irene / Paul / The Cozm"
                 }
             ],
             'cozm-progress': [
                 {
+                    name: "Activity categories — meetings, CoC & PWN exemptions",
+                    desc: "Acting on employment-lawyer (Tanel) advice that a bare \"business meetings\" option is too broad to determine an exemption, The Cozm is refining the activity categories. CoCs for US-to-Europe meetings have been paused, and \"business meetings\" will be reworded — Paul's \"(none of the below)\" framing — with supporting help text so the catch-all is clear and defensible to an auditor, while genuine project-related categories are retained. The same broad category is currently why a Limosa is conservatively flagged for short Belgium trips; the wording change will make the exempt case explicit. KION (Irene) prefers the user-friendly framing, which The Cozm will implement, and the change must be mirrored in the German version.<br><br><strong>Actions:</strong> Paul to circulate the final wording and apply it (EN + DE); Michiel / The Cozm to align the meetings categories with the PWN / Limosa exemption logic; revisit help-text hover behaviour without making it jarring.",
+                    timeline: "July 1, 2026",
+                    responsible: "Paul / Michiel / The Cozm"
+                },
+                {
+                    name: "Data-privacy consent — assistance mode",
+                    desc: "Assistants book and file for travellers and therefore see personal data, so a consent mechanism is needed before the assistance feature is rolled out more widely. The proposal is to email the traveller when an assistant is assigned, explaining the assistant will see certain personal data and inviting them to object. Before suggesting this to the assistants' community, The Cozm needs legal sign-off on whether no response can be treated as consent or whether explicit consent is required, and on how long the consent may be retained (assumed seven years for compliance, to be confirmed).<br><br><strong>Actions:</strong> Paul to confirm the consent approach with Ifedayo (legal counsel) and the retention period with FA; agree the email wording with KION.",
+                    timeline: "July 1, 2026",
+                    responsible: "Paul / The Cozm"
+                },
+                {
+                    name: "Project data — sustainable capture & PE assessment",
+                    desc: "Chasing project managers for project details (contracting entity, customer, site, dates) is not sustainable, and CS projects in particular are poorly documented, creating corporate-tax PE risk as authorities increasingly link PE to employment compliance. As an immediate step — without changing Irene's process — The Cozm will turn her email requests into a structured questionnaire that writes project data directly into Cozm Travel (potentially capturing extra fields such as the PM name). Longer term, the aim is an up-front assessment when a project is set up, flagging PE issues early and feeding the data into the platform.<br><br><strong>Actions:</strong> Irene to send sample project-information request emails; The Cozm to build the structured questionnaire feeding Cozm Travel; design an up-front project-setup assessment.",
+                    timeline: "July 1, 2026",
+                    responsible: "Irene / The Cozm"
+                },
+                {
+                    name: "Immigration logic — position matrix & exemption flags",
+                    desc: "The Cozm will embed KION's immigration position matrix (the positions and applications KION takes per country, shared by Irrum and Irene) into the integration so the tool surfaces publicly available information consistently — this is not immigration advice. Deterministic logic will flag exemptions and fast-track routes that providers have not always applied, reducing time spent correcting providers and avoiding sending travellers down the wrong path.<br><br><strong>Actions:</strong> The Cozm to embed the position matrix and build the exemption / fast-track flagging; coordinate with KION's immigration-provider selection.",
+                    timeline: "July 1, 2026",
+                    responsible: "The Cozm"
+                },
+                {
                     name: "Shadow payroll / GEP monthly reporting",
-                    desc: "Kelly will send the list of project workers who have already exceeded the 10-day threshold. The Cozm will include this in month-end reporting and share the report with Kirsten and Brian on the first day of next month.<br><br><strong>Action:</strong> The Cozm to include Kelly's list in the monthly shadow payroll report.",
-                    timeline: "June 23, 2026",
+                    desc: "Once Kelly sends the list of project workers who have already exceeded the 10-day threshold, The Cozm will include it in month-end reporting and share the report with Kirsten and Brian on the first working day of the month.<br><br><strong>Action:</strong> The Cozm to incorporate Kelly's list into the monthly shadow payroll / GEP report.",
+                    timeline: "July 1, 2026",
                     responsible: "The Cozm"
                 },
                 {
                     name: "Extract A1 information",
-                    desc: "The Cozm is working on extracting data from A1 certificates so relevant information can be pre-populated in the employee portal.<br><br><strong>Action:</strong> Raihana / The Cozm to continue work on A1 data extraction and pre-population.",
-                    timeline: "June 23, 2026",
+                    desc: "The Cozm is extracting data from A1 certificates so relevant details can be pre-populated in the employee portal, and so the assessment reliably recognises an existing, valid A1 and does not prompt for a new one (see the UK employee case).<br><br><strong>Action:</strong> Raihana / The Cozm to continue A1 data extraction and pre-population.",
+                    timeline: "July 1, 2026",
                     responsible: "Raihana / The Cozm"
                 },
                 {
                     name: "Out-of-scope country visibility & US-region reporting",
-                    desc: "The Cozm will send a weekly report for travel to non-phase-one destination countries. A separate US-region report should also be prepared for Melissa so she can cross-check cross-state travel and confirm whether all relevant employees are in scope; Kirsten asked to receive this first before it is shared with Melissa.<br><br><strong>Actions:</strong> The Cozm to include out-of-scope destination countries in weekly reporting; The Cozm to prepare the US-region report and share it with Kirsten first.",
-                    timeline: "June 23, 2026",
+                    desc: "The Cozm sends a weekly report for travel to non-phase-one destination countries. A separate US-region report is being prepared for Melissa so she can cross-check cross-state travel and confirm all relevant employees are in scope; Kirsten asked to receive it first. Melissa confirmed she does not need The Cozm to take US tax calculations further — US payroll already has a system — but does want complete travel data, so all US travellers should remain in scope for data capture.<br><br><strong>Actions:</strong> The Cozm to include out-of-scope destination countries in weekly reporting; The Cozm to prepare the US-region report and share it with Kirsten first.",
+                    timeline: "July 1, 2026",
                     responsible: "The Cozm"
                 },
                 {
                     name: "Concur vs Cozm usage check",
                     desc: "KION wants to identify employees who booked through Concur but did not complete the Cozm Travel assessment. A first report is being prepared so Kirsten can send reminders during hypercare. The initial list appears to include many US travellers, so state and destination details should be checked before reminders are sent. The process may be automated later.<br><br><strong>Actions:</strong> Paul / Raihana to share the first Concur vs Cozm usage report and add state / destination details where relevant; Benjamin / Paul to review how this report can be automated later.",
-                    timeline: "June 23, 2026",
+                    timeline: "July 1, 2026",
                     responsible: "Paul / Raihana / Benjamin"
                 },
                 {
                     name: "Switzerland — 8-day rule & weekend/holiday logic",
                     desc: "The Switzerland eight-day rule is being implemented so late Switzerland PWN cases are blocked from automatic submission and referred to Global Mobility for review. Weekend and public holiday exclusion logic is also being checked and should be tested shortly.<br><br><strong>Actions:</strong> Amine / The Cozm to finalise and test the Switzerland eight-day rule; Amine / The Cozm to confirm weekend and public holiday logic.",
-                    timeline: "June 23, 2026",
+                    timeline: "July 1, 2026",
                     responsible: "Amine / The Cozm"
                 },
                 {
                     name: "Spain PWN automation",
                     desc: "Spain PWN automation is not yet complete and is not the highest priority because Spain is not part of phase one. The Cozm will confirm once ready so Irene can complete the missing recipient questionnaire data.<br><br><strong>Actions:</strong> The Cozm to check status with Abdul; Michiel to notify Irene once Spain automation is ready.",
-                    timeline: "June 23, 2026",
+                    timeline: "July 1, 2026",
                     responsible: "Michiel / The Cozm"
                 },
                 {
                     name: "Business visa flow — CIBT redirect",
                     desc: "The business visa flow is still waiting on input from CIBT. Once CIBT confirms the details, The Cozm will add the relevant link to the platform.<br><br><strong>Actions:</strong> Benjamin to chase CIBT; The Cozm to add the CIBT link once confirmed.",
-                    timeline: "June 23, 2026",
+                    timeline: "July 1, 2026",
                     responsible: "Benjamin / The Cozm"
                 },
                 {
                     name: "Phase-two country readiness",
-                    desc: "KION is preparing the next rollout phases. Phase two will likely include the remaining Dematic countries using Concur Travel. A later phase will cover Dematic countries not using Concur, followed by KION ITS. New Zealand, France and Mexico were discussed. Mexico should stay on the list for now, but should be tested carefully with sample cases before broader rollout.<br><br><strong>Actions:</strong> The Cozm to review New Zealand and Mexico readiness; The Cozm / KION to test Mexico with a few sample cases before wider rollout.",
-                    timeline: "June 23, 2026",
+                    desc: "KION is preparing the next rollout phases. Phase two will likely include the remaining Dematic countries using Concur Travel. A later phase will cover Dematic countries not using Concur, followed by KION ITS. New Zealand, France and Mexico were discussed. Mexico should stay on the list for now, but should be tested carefully with sample cases before broader rollout. Phase-two readiness also depends on the immigration-provider selection now under way.<br><br><strong>Actions:</strong> The Cozm to review New Zealand and Mexico readiness; The Cozm / KION to test Mexico with a few sample cases before wider rollout.",
+                    timeline: "July 1, 2026",
                     responsible: "The Cozm / KION Group"
                 }
             ],
@@ -537,8 +574,8 @@
                 },
                 {
                     name: "Danish salary threshold support",
-                    desc: "<strong>Status (Apr 15):</strong> Irene requested contacts for the Danish authority that can provide a written salary table ruling. The existing CBA (collective bargaining agreement) is too flexible — KION needs clear, defined thresholds for compliance purposes.<br><br><strong>Action:</strong> Michiel to forward Ben's Danish authority contact details today (Apr 15). The authority can provide written confirmation on salary thresholds, giving KION a clear compliance baseline.",
-                    timeline: "June 23, 2026",
+                    desc: "<strong>Status (Apr 15):</strong> Irene requested contacts for the Danish authority that can provide a written salary table ruling. The existing CBA (collective bargaining agreement) is too flexible — KION needs clear, defined thresholds for compliance purposes.<br><br><strong>Action:</strong> Michiel to forward Ben's Danish authority contact details (Apr 15). The authority can provide written confirmation on salary thresholds, giving KION a clear compliance baseline.",
+                    timeline: "July 1, 2026",
                     responsible: "Michiel / The Cozm"
                 },
                 {
@@ -548,10 +585,10 @@
                     responsible: "KION Group and The Cozm"
                 },
                 {
-                    name: "US State logic",
-                    desc: "Melissa needs travel data for salaried employees to support biweekly payroll reporting<br>• <strong>No Calculations Needed:</strong> At this stage, only raw data provision required<br>• <strong>Future Enhancement:</strong> Once project codes and project payroll codes integrated, tool could become highly valuable for US payroll team",
+                    name: "US State logic — data only, tax aligned with BDO later",
+                    desc: "<strong>Update (Jun 22):</strong> Melissa (US payroll) confirmed she does not need The Cozm to take US state-to-state tax calculations further — US payroll already has a system in place — but does want complete travel data showing who is travelling where and how often. The Cozm has built underlying state-to-state withholding / PE logic, which will be refined and aligned with BDO Global Expat Pay <em>after</em> the initial hypercare period rather than during it, as state taxes are not time-critical before travel.<br>• <strong>Now:</strong> provide complete raw travel data for all US travellers (keep all US travellers in scope for data capture)<br>• <strong>Later:</strong> refine state-to-state tax / withholding logic with Brian and BDO Global Expat Pay",
                     timeline: "TBD",
-                    responsible: "KION Group"
+                    responsible: "KION Group / BDO / The Cozm"
                 },
                 {
                     name: "PWN recipient field — triangle postings",
