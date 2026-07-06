@@ -174,7 +174,7 @@
                     <div class="stat-label">In Progress - KION</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('cozm-progress')">
-                    <div class="stat-number" style="color:#d4a84b;">9</div>
+                    <div class="stat-number" style="color:#d4a84b;">7</div>
                     <div class="stat-label">In Progress - Cozm</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('amex-progress')">
@@ -237,10 +237,10 @@
                         <div class="milestone-name">Final Configurations & Approvals</div>
                         <div class="status-badge status-in-progress">In Progress</div>
                     </div>
-                    <div class="milestone-description"><strong>Go-live completed Friday 12 June 2026; the project is now in active hypercare.</strong> Next review target is mid-July 2026. Following the 29 June catch-up, the current priorities are: capturing travellers who did not book through Concur (Concur expense + Amex GBT cross-check), confirming the CoC / A1 business-meeting day thresholds with BDO at the mid-July Windsor session, data-privacy consent for assistance mode (with a possible carve-out under review), a sustainable way to capture project data and assess PE risk, embedding KION's immigration position matrix with exemption / fast-track flags, the immigration-provider RFI, finishing Spain PWN automation, A1 data extraction, the month-end shadow payroll / GEP report (Kelly's list now received), and phase-two country readiness (POAs, the Irish entity, and test cases for Australia, Mexico and Korea ahead of the 4 September go-live). US state-to-state tax and withholding will be aligned with BDO Global Expat Pay after the initial hypercare period.</div>
+                    <div class="milestone-description"><strong>Go-live completed Friday 12 June 2026; the project is now in active hypercare.</strong> Next review target is mid-July 2026. Following the 29 June catch-up, the current priorities are: capturing travellers who did not book through Concur (Concur expense + Amex GBT cross-check), confirming the CoC / A1 business-meeting day thresholds with BDO at the mid-July Windsor session, data-privacy consent for assistance mode (with a possible carve-out under review), a sustainable way to capture project data and assess PE risk, the immigration-provider RFI, finishing Spain PWN automation, the month-end shadow payroll / GEP report (Kelly's list now received), and phase-two country readiness (POAs, the Irish entity, and test cases for Australia, Mexico and Korea ahead of the 4 September go-live). US state-to-state tax and withholding will be aligned with BDO Global Expat Pay after the initial hypercare period.</div>
                     <div class="milestone-details">
                         <div class="detail-item"><div class="detail-icon icon-date"></div><div class="detail-text">Next review: mid-July 2026 | Go-live: June 12, 2026 (Fri) — now in hypercare</div></div>
-                        <div class="detail-item"><div class="detail-icon icon-team"></div><div class="detail-text">4 KION items, 9 Cozm items, 9 Non Critical items</div></div>
+                        <div class="detail-item"><div class="detail-icon icon-team"></div><div class="detail-text">4 KION items, 7 Cozm items, 9 Non Critical items</div></div>
                     </div>
                 </div>
             </div>
@@ -271,7 +271,7 @@
         <div id="cozm-progress" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon" style="background:#BD8941;"></div>
-                In Progress with The Cozm (9)
+                In Progress with The Cozm (7)
             </h2>
             <div id="cozm-progress-list" class="milestone-grid"></div>
         </div>
@@ -494,26 +494,14 @@
                 {
                     name: "Project data — sustainable capture & PE assessment",
                     desc: "Chasing project managers for project details (contracting entity, customer, site, dates) is not sustainable, and CS projects in particular are poorly documented, creating corporate-tax PE risk as authorities increasingly link PE to employment compliance. As an immediate step — without changing Irene's process — The Cozm will turn her email requests into a structured questionnaire that writes project data directly into Cozm Travel (potentially capturing extra fields such as the PM name). Longer term, the aim is an up-front assessment when a project is set up, flagging PE issues early and feeding the data into the platform.<br><br><strong>Actions:</strong> Irene to send sample project-information request emails; The Cozm to build the structured questionnaire feeding Cozm Travel; design an up-front project-setup assessment. <br><br><strong>Update (29 Jun):</strong> Irene will send sample project-information request emails so The Cozm can model the structured questionnaire; Ben offered to progress this over the summer while Irene is on holiday. KION also plans a simplified way for project managers to upload project data themselves, so it does not all sit with the global mobility team.",
-                    timeline: "August 29, 2026",
+                    timeline: "On hold",
                     responsible: "Irene / Raihana / The Cozm"
-                },
-                {
-                    name: "Immigration logic — position matrix & exemption flags",
-                    desc: "The Cozm will embed KION's immigration position matrix (the positions and applications KION takes per country, shared by Irrum and Irene) into the integration so the tool surfaces publicly available information consistently — this is not immigration advice. Deterministic logic will flag exemptions and fast-track routes that providers have not always applied, reducing time spent correcting providers and avoiding sending travellers down the wrong path.<br><br><strong>Actions:</strong> The Cozm to embed the position matrix and build the exemption / fast-track flagging; coordinate with KION's immigration-provider selection. <br><br><strong>Update (29 Jun):</strong> Irene will send examples of the arguments KION uses to claim exemptions and fast-track routes (e.g. after-sales activities, the Turkey exemption, and third-country nationals who already hold the right to work elsewhere in Europe). Ben will research equivalent exemptions / fast-track applications for a company like Dematic in further countries and feed them into the logic, so the tool can guide whichever immigration provider is chosen and reduce human error.",
-                    timeline: "September 30, 2026",
-                    responsible: "Irene / The Cozm"
                 },
                 {
                     name: "Shadow payroll / GEP monthly reporting",
                     desc: "Once Kelly sends the list of project workers who have already exceeded the 10-day threshold, The Cozm will include it in month-end reporting and share the report with Kirsten and Brian on the first working day of the month.<br><br><strong>Action:</strong> The Cozm to incorporate Kelly's list into the monthly shadow payroll / GEP report. <br><br><strong>Update (29 Jun):</strong> Kelly's list has now been received, so The Cozm can build it into the report; heavier reporting items will be given firmed-up dates once The Cozm aligns internally on delivery. The report is issued on the first working day of the month.",
-                    timeline: "August 3, 2026 (first working day of the month)",
+                    timeline: "July 13, 2026",
                     responsible: "The Cozm"
-                },
-                {
-                    name: "Extract A1 information",
-                    desc: "The Cozm is extracting data from A1 certificates so relevant details can be pre-populated in the employee portal, and so the assessment reliably recognises an existing, valid A1 and does not prompt for a new one (see the UK employee case).<br><br><strong>Action:</strong> Raihana / The Cozm to continue A1 data extraction and pre-population. <br><br><strong>Update (29 Jun):</strong> Work is ongoing — Raihana continues the A1 data extraction and pre-population.",
-                    timeline: "July 31, 2026",
-                    responsible: "Raihana / The Cozm"
                 },
                 {
                     name: "Spain PWN automation",
