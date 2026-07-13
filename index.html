@@ -170,11 +170,11 @@
                     <div class="stat-label">Completed</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('kion-progress')">
-                    <div class="stat-number in-progress">4</div>
+                    <div class="stat-number in-progress">5</div>
                     <div class="stat-label">In Progress - KION</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('cozm-progress')">
-                    <div class="stat-number" style="color:#d4a84b;">7</div>
+                    <div class="stat-number" style="color:#d4a84b;">4</div>
                     <div class="stat-label">In Progress - Cozm</div>
                 </div>
                 <div class="stat-card" onclick="scrollToSection('amex-progress')">
@@ -240,7 +240,7 @@
                     <div class="milestone-description"><strong>Go-live completed Friday 12 June 2026; the project is now in active hypercare.</strong> Next review target is mid-July 2026. Following the 29 June catch-up, the current priorities are: capturing travellers who did not book through Concur (Concur expense + Amex GBT cross-check), confirming the CoC / A1 business-meeting day thresholds with BDO at the mid-July Windsor session, data-privacy consent for assistance mode (with a possible carve-out under review), a sustainable way to capture project data and assess PE risk, the immigration-provider RFI, finishing Spain PWN automation, the month-end shadow payroll / GEP report (Kelly's list now received), and phase-two country readiness (POAs, the Irish entity, and test cases for Australia, Mexico and Korea ahead of the 4 September go-live). US state-to-state tax and withholding will be aligned with BDO Global Expat Pay after the initial hypercare period.</div>
                     <div class="milestone-details">
                         <div class="detail-item"><div class="detail-icon icon-date"></div><div class="detail-text">Next review: mid-July 2026 | Go-live: June 12, 2026 (Fri) — now in hypercare</div></div>
-                        <div class="detail-item"><div class="detail-icon icon-team"></div><div class="detail-text">4 KION items, 7 Cozm items, 9 Non Critical items</div></div>
+                        <div class="detail-item"><div class="detail-icon icon-team"></div><div class="detail-text">5 KION items, 4 Cozm items, 9 Non Critical items</div></div>
                     </div>
                 </div>
             </div>
@@ -262,7 +262,7 @@
         <div id="kion-progress" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon icon-in-progress"></div>
-                In Progress with KION (4)
+                In Progress with KION (5)
             </h2>
             <div id="kion-progress-list" class="milestone-grid"></div>
         </div>
@@ -271,7 +271,7 @@
         <div id="cozm-progress" class="content-section">
             <h2 class="section-title">
                 <div class="section-icon" style="background:#BD8941;"></div>
-                In Progress with The Cozm (7)
+                In Progress with The Cozm (4)
             </h2>
             <div id="cozm-progress-list" class="milestone-grid"></div>
         </div>
@@ -476,21 +476,15 @@
                     desc: "KION is running a structured selection process for a new immigration provider, driven by KION's procurement team (Mike Hibbert supports with interviews and internal input; Irene and Cynthia have contributed). An RFI will shortlist providers, with the possibility of different providers by region, and KION aims to confirm a provider by the end of 2026. A key requirement is that the chosen provider can <strong>connect to Cozm Travel</strong>; The Cozm will confirm what a properly working integration needs.<br><br><strong>Update (29 Jun):</strong> The first procurement call was held on 29 June. The Cozm is separately speaking with other providers and will periodically share what it learns — not to influence KION's decision, but so KION knows what is available (e.g. Fragomen was very open to feedback; ICU Net's contact will investigate internally, and was told connectivity to Cozm is essential to stay in the RFI). The focus is stronger capability in the work-permit / exemption space and a better employee experience than today, where providers re-ask questions already answered, take three to four business days, and — per one client — often give the wrong answer.<br><br><strong>Actions:</strong> KION procurement / Mike to run the RFI and involve The Cozm; The Cozm to feed in integration requirements and provider learnings; alignment to continue ahead of the September Berlin session.",
                     timeline: "September 2026 (Berlin session)",
                     responsible: "KION Procurement / Mike Hibbert / The Cozm"
+                },
+                {
+                    name: "Activity categories & day thresholds — CoC exemption for business trips",
+                    desc: "The Cozm has refined the activity categories and reworded the broad \"business meetings\" option (Paul's \"(none of the below)\" framing), with supporting help text so the exempt case is clear and defensible to an auditor. The one point still open is the <strong>day threshold for the CoC exemption on business trips</strong> — how many days of US-to-Europe business travel (currently set at 15) should trigger a filing. This was to be settled with BDO at the mid-July Windsor session, with Irene dialled in.<br><br><strong>Action:</strong> KION to confirm the day threshold for the CoC exemption for business trips.",
+                    timeline: "Mid-July 2026 (after BDO Windsor session)",
+                    responsible: "KION (Irene) / BDO"
                 }
             ],
             'cozm-progress': [
-                {
-                    name: "Activity categories & day thresholds — meetings, CoC, A1 & PWN exemptions",
-                    desc: "Acting on employment-lawyer (Tanel) advice that a bare \"business meetings\" option is too broad to determine an exemption, The Cozm is refining the activity categories. CoCs for US-to-Europe meetings have been paused, and \"business meetings\" will be reworded — Paul's \"(none of the below)\" framing — with supporting help text so the catch-all is clear and defensible to an auditor, while genuine project-related categories are retained. The same broad category is currently why a Limosa is conservatively flagged for short Belgium trips; the wording change will make the exempt case explicit. KION (Irene) prefers the user-friendly framing, which The Cozm will implement, and the change must be mirrored in the German version.<br><br><strong>Actions:</strong> Paul to circulate the final wording and apply it (EN + DE); Michiel / The Cozm to align the meetings categories with the PWN / Limosa exemption logic; revisit help-text hover behaviour without making it jarring. <br><br><strong>Update (29 Jun):</strong> The day-threshold question stays open and will be settled with <strong>BDO at the Windsor session in mid-July</strong>, after which KION confirms how many days trigger a filing and where to stop. It covers the CoC threshold (currently US-to-Europe trips over 15 days) <em>and</em>, per Irene, the A1 threshold for business meetings within Europe (10 vs 15 days) — not CoCs alone. Irene will be dialled into that session; keep this item open until then.",
-                    timeline: "Mid-July 2026 (after BDO Windsor session)",
-                    responsible: "Paul / Michiel / KION (Irene) / The Cozm"
-                },
-                {
-                    name: "Data-privacy consent — assistance mode",
-                    desc: "Assistants book and file for travellers and therefore see personal data, so a consent mechanism is needed before the assistance feature is rolled out more widely. The proposal is to email the traveller when an assistant is assigned, explaining the assistant will see certain personal data and inviting them to object. Before suggesting this to the assistants' community, The Cozm needs legal sign-off on whether no response can be treated as consent or whether explicit consent is required, and on how long the consent may be retained (assumed seven years for compliance, to be confirmed).<br><br><strong>Actions:</strong> Paul to confirm the consent approach with Ifedayo (legal counsel) and the retention period with FA; agree the email wording with KION. <br><br><strong>Update (29 Jun):</strong> A parallel route may remove the problem entirely — another engineering company The Cozm is speaking with believes it can obtain a <strong>carve-out</strong> (treating this like other HR / reward tasks done on behalf of employees, with visibility but no explicit consent). If that holds it would avoid building role-based access control for assistants, which is the biggest risk in the current assistance mode. Kirsten will set up a session with KION's Susanna and the compliance officer (focused on the GDPR risk) to review KION's position. Paul is also arranging the Workday export of employee email + Workday IDs per company needed to enable assistant mode.",
-                    timeline: "July 31, 2026",
-                    responsible: "Paul / Kirsten (KION) / The Cozm"
-                },
                 {
                     name: "Project data — sustainable capture & PE assessment",
                     desc: "Chasing project managers for project details (contracting entity, customer, site, dates) is not sustainable, and CS projects in particular are poorly documented, creating corporate-tax PE risk as authorities increasingly link PE to employment compliance. As an immediate step — without changing Irene's process — The Cozm will turn her email requests into a structured questionnaire that writes project data directly into Cozm Travel (potentially capturing extra fields such as the PM name). Longer term, the aim is an up-front assessment when a project is set up, flagging PE issues early and feeding the data into the platform.<br><br><strong>Actions:</strong> Irene to send sample project-information request emails; The Cozm to build the structured questionnaire feeding Cozm Travel; design an up-front project-setup assessment. <br><br><strong>Update (29 Jun):</strong> Irene will send sample project-information request emails so The Cozm can model the structured questionnaire; Ben offered to progress this over the summer while Irene is on holiday. KION also plans a simplified way for project managers to upload project data themselves, so it does not all sit with the global mobility team.",
@@ -508,12 +502,6 @@
                     desc: "Spain PWN automation is not yet complete and is not the highest priority because Spain is not part of phase one. The Cozm will confirm once ready so Irene can complete the missing recipient questionnaire data.<br><br><strong>Actions:</strong> The Cozm to check status with Abdul; Michiel to notify Irene once Spain automation is ready. <br><br><strong>Update (29 Jun):</strong> Abdul confirmed the automation should be ready that day or the next, subject to dev testing. The two tricky regions that follow different processes — <strong>Basque Country and Catalonia</strong> — are also automated (the other regions were a straightforward username / password login); every Spanish region must be covered before go-live. Michiel to run a few tests with Abdul, then notify Irene to complete the missing recipient questionnaire data.",
                     timeline: "July 10, 2026",
                     responsible: "Michiel / Abdul / The Cozm"
-                },
-                {
-                    name: "Business visa flow — CIBT redirect (on hold)",
-                    desc: "The business visa flow is still waiting on input from CIBT. Once CIBT confirms the details, The Cozm will add the relevant link to the platform.<br><br><strong>Actions:</strong> Benjamin to chase CIBT; The Cozm to add the CIBT link once confirmed. <br><br><strong>Decision (29 Jun):</strong> CIBT has replied with a link, but the redirect is being <strong>taken off for now</strong>: as it stands the employee would have to re-enter all their trip information from scratch in CIBT's portal, which is a poor experience. KION's team is not involved in the visa process (employees go directly to CIBT), so a half-integrated hand-off adds no value. Revisit alongside the immigration-provider RFI, when a properly integrated hand-off can be scoped.",
-                    timeline: "On hold — revisit with immigration RFI (H2 2026)",
-                    responsible: "Michiel / Benjamin / The Cozm"
                 },
                 {
                     name: "Phase-two country readiness",
